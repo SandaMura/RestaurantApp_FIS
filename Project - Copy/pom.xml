@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>FIS_Restaurant</artifactId>
+    <artifactId>Project</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>FIS_Restaurant</name>
+    <name>Project</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -128,8 +128,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.fis_restaurant/com.example.fis_restaurant.HelloApplication
-                            </mainClass>
+                            <mainClass>com.example.project/com.example.project.HelloApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

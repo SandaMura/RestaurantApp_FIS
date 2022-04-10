@@ -1,4 +1,4 @@
-module com.example.fis_restaurant {
+module com.example.project {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -11,6 +11,6 @@ module com.example.fis_restaurant {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens com.example.fis_restaurant to javafx.fxml;
-    exports com.example.fis_restaurant;
+    opens com.example.project to javafx.fxml;
+    exports com.example.project;
 }
