@@ -1,7 +1,7 @@
 package logIn.services;
 
-//import org.dizitart.no2.Nitrite;
-//import org.dizitart.no2.objects.ObjectRepository;
+import org.dizitart.no2.Nitrite;
+import org.dizitart.no2.objects.ObjectRepository;
 import logIn.exceptions.UsernameAlreadyExistsException;
 import logIn.model.User;
 
@@ -17,11 +17,12 @@ public class UserService {
     private static ObjectRepository<User> userRepository;
 
     public static void initDatabase() {
-        Nitrite database = Nitrite.builder()
+        try (Nitrite database = Nitrite.builder()
                 .filePath(getPathToFile("registration-example.db").toFile())
-                .openOrCreate("test", "test");
+                .openOrCreate("test", "test")) {
 
-        userRepository = database.getRepository(User.class);
+            userRepository = database.getRepository(User.class);
+        }
     }
 
     public static void addUser(String username, String password, String role) throws UsernameAlreadyExistsException {

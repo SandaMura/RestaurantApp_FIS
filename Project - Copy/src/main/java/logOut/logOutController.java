@@ -14,7 +14,7 @@ public class logOutController{
     private AnchorPane Scene_LogOut;
 
     Stage stage;
-
+    @FXML
     public void logout(ActionEvent event){
         stage = (Stage) Scene_LogOut.getScene().getWindow();
         System.out.println("You successfully logged out");

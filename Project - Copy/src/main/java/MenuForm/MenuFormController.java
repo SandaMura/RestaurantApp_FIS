@@ -13,8 +13,6 @@ import javafx.scene.control.Control;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
-import javax.swing.*;
-import java.awt.*;
 import java.io.File;
 
 
@@ -33,14 +31,14 @@ public class MenuFormController{
         System.out.println("You successfully logged out");
         stage.close();*/
 
-        JFileChooser chooser = new JFileChooser();
+        /*JFileChooser chooser = new JFileChooser();
         chooser.showOpenDialog(null);
         File f = chooser.getSelectedFile();
         String filename = f.getAbsolutePath();
-        //txt_filename.setText(filename);*///show address of the image
-        Image.getAbsolutePath = null;
+        //txt_filename.setText(filename);///show address of the image
+        Image getPath = null;
         ImageIcon icon = new ImageIcon(filename);
-        Image image = icon.getImage().getScaledInstance(100, 200,Image.SCALE_SMOOTH );
+        Image image = icon.getImage().getScaledInstance(100, 200,Image.SCALE_SMOOTH );*/
 
     }
 
