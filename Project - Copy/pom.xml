@@ -111,6 +111,17 @@
             <artifactId>nitrite</artifactId>
             <version>3.4.3</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.6.2</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -143,7 +154,7 @@
                         </configuration>
                     </execution>
                 </executions-->
-                <configuration><mainClass>com.example.project.HelloApplication</mainClass></configuration>
+                <configuration><mainClass>logIn.controllers.RestaurantApplication</mainClass></configuration>
             </plugin>
         </plugins>
     </build>
