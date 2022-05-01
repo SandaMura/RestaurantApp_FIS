@@ -35,7 +35,7 @@ public class UserService {
     private static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExistsException {
 
         for (User user : userRepository.find()) {
-            System.out.println("MURARARARAR2");
+            //System.out.println("MURARARARAR2");
             if (Objects.equals(username, user.getUsername()))
                 throw new UsernameAlreadyExistsException(username);
         }

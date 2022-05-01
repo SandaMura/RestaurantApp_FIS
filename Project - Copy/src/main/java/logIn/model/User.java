@@ -1,6 +1,6 @@
 package logIn.model;
 
-//import org.dizitart.no2.objects.Id;
+import org.dizitart.no2.objects.Id;
 
 public class User {
    // @Id

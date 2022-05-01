@@ -154,7 +154,7 @@
                         </configuration>
                     </execution>
                 </executions-->
-                <configuration><mainClass>logIn.controllers.RestaurantApplication</mainClass></configuration>
+                <configuration><mainClass>App.RestaurantApplication</mainClass></configuration>
             </plugin>
         </plugins>
     </build>
