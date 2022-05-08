@@ -1,6 +1,11 @@
 package logIn.controllers;
 
+import App.RestaurantApplication;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
@@ -8,10 +13,7 @@ import javafx.stage.Stage;
 import logIn.exceptions.loginFailed;
 import logIn.services.UserSearch;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
-
-
 
 
 public class LogInController {
@@ -40,8 +42,19 @@ public class LogInController {
 
 
 
-    public void loginButtonAction(ActionEvent e){
+    private void AlertBox(String message){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Message Here...");
+        alert.setHeaderText("Look, an Information Dialog");
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
+
+    public void loginButtonAction(ActionEvent e) {
         System.out.println("DEBUG: Utilizator incearca sa se logheze");
+
+        //AlertBox("DEBUG: Utilizator a apasat butonul LOGIN");
+
 
         ///verific daca username-ul si parola sunt in baza de date USERS: database
         ///Daca nu sunt in baza de date, notific utilizatorul
@@ -50,7 +63,7 @@ public class LogInController {
         try {
             if (customerCheckRB.isSelected()) {
                 //search in database for the customer role
-
+               AlertBox("Utilizatorul este CUSTOMER");
                 System.out.println("DEBUG: Utilizator incearca sa se logheze drept CUSTOMER");
                 if (UserSearch.searchUserCustomer(usernameField.getText(), passwordField.getText())) {
                     ///change the scene
@@ -61,6 +74,7 @@ public class LogInController {
 
             if (cookCheckRB.isSelected()) {
                 ///search in database for the cook role
+                AlertBox("Utilizatorul este COOK");
                 System.out.println("DEBUG: Utilizator incearca sa se logheze drept COOK");
 
                 if (UserSearch.searchUserCook(usernameField.getText(), passwordField.getText())) {
@@ -69,26 +83,40 @@ public class LogInController {
                 }
             }
             if (adminCheckRB.isSelected()) {
-                if (CUIfield.getText() == "CUI111") ;
-                System.out.println("DEBUG: Utilizator incearca sa se logheze drept ADMIN");
-
-                if (UserSearch.searchUserAdmin(usernameField.getText(), passwordField.getText())) {
-                    ///change the scene
-                    System.out.println("DEBUG: Utilizator s-a logat ADMIN");
+                if (CUIfield.getText() == "CUI111") {
+                    System.out.println("DEBUG: Utilizator incearca sa se logheze drept ADMIN");
+                    AlertBox("Utilizatorul este ADMIN");
+                    if (UserSearch.searchUserAdmin(usernameField.getText(), passwordField.getText())) {
+                        ///change the scene
+                        System.out.println("DEBUG: Utilizator s-a logat ADMIN");
+                    }
                 }
-            }
-        } catch(loginFailed incorrect){
-            loginFailed.setText(incorrect.getMessage());
-            }
-    }
-  ///change scene: from login to sign up
-    public static void registerButton(ActionEvent e, String fxmlFile) throws IOException {
+                else{
+                    AlertBox("Adminul nu a introdus CUI corect");
 
-    }
+            } }}catch(loginFailed incorrect){
+                loginFailed.setText(incorrect.getMessage());}
+            }
+
+
 
 
     public void exitButtonAction(javafx.event.ActionEvent actionEvent) {
         Stage stage=(Stage) ExitButton.getScene().getWindow();
         stage.close();
+    }
+
+    public void registerButton(ActionEvent actionEvent) throws IOException {
+       // AlertBox("The user wants to create a new account");
+       // DBUtils.changeScene(actionEvent,"register.fxml", "Register form", null, null, null);
+
+        FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("register.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        System.out.println("DEBUG: Deschide fereastra de login!");
+        Stage stage2=null;
+        stage2.setTitle("Project_FIS_restaurant");
+        stage2.setScene(scene);
+        stage2.show();
+        AlertBox("The changeScene method happened");
     }
 }

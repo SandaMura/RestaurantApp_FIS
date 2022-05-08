@@ -4,7 +4,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import javafx.event.ActionEvent;
 import logIn.services.DBUtils;
 
 public class logOutController{
@@ -15,13 +14,15 @@ public class logOutController{
     private AnchorPane Scene_LogOut;
 
     Stage stage;
-    @FXML
-    public void logout(ActionEvent event){
+
+
+
+    public void logout(javafx.event.ActionEvent actionEvent) {
+
         stage = (Stage) Scene_LogOut.getScene().getWindow();
         System.out.println("You successfully logged out");
 
-        DBUtils.changeScene(event, "LogInInterface.fxml", "Log in!", null, null, null);
+        DBUtils.changeScene(actionEvent, "LogInInterface.fxml", "Log in!", null, null, null);
 
     }
-
 }
