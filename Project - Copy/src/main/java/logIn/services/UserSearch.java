@@ -2,8 +2,6 @@ package logIn.services;
 
 import logIn.exceptions.loginFailed;
 import logIn.model.User;
-import logIn.services.UserService;
-
 
 import java.util.Objects;
 
@@ -21,9 +19,9 @@ public class UserSearch {
                    found=true;
                 }
 
-                throw new loginFailed(username);
+                throw new loginFailed();
              }
-    }   if(found==false) throw new loginFailed;if(found==true) return true;
+    }   if(found==false) throw new loginFailed();   return true;
      }
 
 
@@ -31,28 +29,29 @@ public class UserSearch {
         boolean found=false;
         for (User user : userRepository.find()) {
             //System.out.println
-            if(user.getRole().equals("Cook");
+            if(user.getRole().equals("Cook"))
             {
                 if (Objects.equals(username, user.getUsername()) && Objects.equals(password, user.getPassword())){
                     found=true;
                 }
 
-                throw new loginFailed(username);
             }
-         }  if(found==false) throw new loginFailed;if(found==true) return true;
-}
-
+         }  if(found==false) throw new loginFailed();
+                 return true;
+       }
 public static boolean  searchUserAdmin(String username, String password) throws loginFailed {
         boolean found=false;
         for (User user : userRepository.find()) {
             //System.out.println
-            if(user.getRole().equals("Admin");
+            if(user.getRole().equals("Admin"))
             {
                 if (Objects.equals(username, user.getUsername()) && Objects.equals(password, user.getPassword())){
                     found=true;
                 }
 
-                throw new loginFailed(username);
+                throw new loginFailed();
             }
-        }  if(found==false) throw new loginFailed;if(found==true) return true;
+        }  if(found==false) throw new loginFailed();return true;
     }
+
+}

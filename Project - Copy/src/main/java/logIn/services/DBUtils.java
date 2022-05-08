@@ -1,13 +1,11 @@
 package logIn.services;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import logIn.exceptions.loginFailed;
 
 import java.io.IOException;
 
@@ -20,7 +18,7 @@ public class DBUtils { ///helper class
 
         if(username != null && password!=null){  ///daca merge logged in
             try{
-                FXMLLoader loader=new FXMLLoader(DBUtils.class.getResource(fxmlFile))'
+                FXMLLoader loader=new FXMLLoader(DBUtils.class.getResource(fxmlFile));
                 root=loader.load();
 
                 ///schimba scena in functie de rol
