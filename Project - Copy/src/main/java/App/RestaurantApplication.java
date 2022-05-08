@@ -21,7 +21,10 @@ public class RestaurantApplication extends Application{
         MenuService.initDatabase();
         System.out.println("DEBUG: Am initializat baza de date FOOD");
         //FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("register.fxml"));
-        FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("FormInterface.fxml"));
+        //FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("FormInterface.fxml"));
+
+        FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("LogInInterface.fxml"));
+
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Project_FIS_restaurant");
         stage.setScene(scene);

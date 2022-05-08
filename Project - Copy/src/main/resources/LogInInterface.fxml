@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <right>
       <AnchorPane prefHeight="400.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
@@ -47,22 +46,25 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <TextField layoutX="372.0" layoutY="82.0" />
-            <TextField layoutX="372.0" layoutY="118.0" />
-            <Button layoutX="138.0" layoutY="335.0" mnemonicParsing="false" text="Register" />
+            <TextField fx:id="usernameField" layoutX="374.0" layoutY="76.0" />
+            <TextField fx:id="passwordField" layoutX="372.0" layoutY="118.0" />
+            <Button fx:id="registerButton" layoutX="138.0" layoutY="335.0" mnemonicParsing="false" text="Register" />
             <Label layoutX="28.0" layoutY="288.0" prefHeight="36.0" prefWidth="314.0" text="Your first time here? Create your account now" textFill="#f8f8f8">
                <font>
                   <Font size="13.0" />
                </font>
             </Label>
-            <RadioButton layoutX="263.0" layoutY="179.0" mnemonicParsing="false" text="I am the admin" textFill="#fcfcfc" />
-            <Label layoutX="432.0" layoutY="170.0" prefHeight="36.0" prefWidth="47.0" text="CUI" textFill="#f8f8f8">
+            <RadioButton fx:id="adminCheckRB" layoutX="263.0" layoutY="227.0" mnemonicParsing="false" text="I am the admin" textFill="#fcfcfc" />
+            <Label layoutX="423.0" layoutY="218.0" prefHeight="36.0" prefWidth="47.0" text="CUI" textFill="#f8f8f8">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <TextField layoutX="372.0" layoutY="205.0" />
-            <Button layoutX="382.0" layoutY="253.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="130.0" text="Click to log in" />
+            <TextField fx:id="CUIfield" layoutX="373.0" layoutY="254.0" />
+            <Button fx:id="loginButton" layoutX="383.0" layoutY="309.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="130.0" text="Click to log in" />
+            <Button fx:id="ExitButton" layoutX="551.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitButtonAction" text="Exit" textFill="RED" />
+            <RadioButton fx:id="customerCheckRB" layoutX="263.0" layoutY="159.0" mnemonicParsing="false" text="I am a customer" textFill="#fcfcfc" />
+            <RadioButton fx:id="cookCheckRB" layoutX="263.0" layoutY="192.0" mnemonicParsing="false" text="I am a cook" textFill="#fcfcfc" />
          </children>
       </AnchorPane>
    </center>

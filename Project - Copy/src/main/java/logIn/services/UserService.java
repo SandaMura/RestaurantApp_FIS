@@ -14,7 +14,8 @@ import static logIn.services.FileSystemService.getPathToFile;
 
 public class UserService {
 
-    private static ObjectRepository<User> userRepository;
+    //private static ObjectRepository<User> userRepository;
+    public static ObjectRepository<User> userRepository;
 
     public static void initDatabase() {
         Nitrite database = Nitrite.builder()
@@ -61,6 +62,8 @@ public class UserService {
         }
         return md;
     }
+
+
 
 
 }
