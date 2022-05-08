@@ -3,11 +3,11 @@ package logIn.controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import logIn.exceptions.loginFailed;
 import logIn.services.UserSearch;
 
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 
@@ -39,10 +39,6 @@ public class LogInController {
     private TextField CUIfield;
 
 
-    public void exitButtonAction(ActiveEvent e){
-        Stage stage=(Stage) ExitButton.getScene().getWindow();
-        stage.close();
-    }
 
     public void loginButtonAction(ActionEvent e){
         System.out.println("DEBUG: Utilizator incearca sa se logheze");
@@ -91,4 +87,8 @@ public class LogInController {
     }
 
 
+    public void exitButtonAction(javafx.event.ActionEvent actionEvent) {
+        Stage stage=(Stage) ExitButton.getScene().getWindow();
+        stage.close();
+    }
 }

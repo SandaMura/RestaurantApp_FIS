@@ -1,14 +1,12 @@
 package App;
 
 
-
 import MenuForm.services.MenuService;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import logIn.services.UserService;
-import MenuForm.services.MenuService;
 
 import java.io.IOException;
 
@@ -24,8 +22,10 @@ public class RestaurantApplication extends Application{
         //FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("FormInterface.fxml"));
 
         FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("LogInInterface.fxml"));
+        System.out.println("DEBUG: Deschide fereastra de login!");
 
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        System.out.println("DEBUG: Deschide fereastra de login!");
         stage.setTitle("Project_FIS_restaurant");
         stage.setScene(scene);
         stage.show();

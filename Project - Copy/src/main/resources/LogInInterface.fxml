@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="logIn.controllers.LogInController">
    <right>
       <AnchorPane prefHeight="400.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
    </right>
@@ -19,7 +19,7 @@
       <AnchorPane prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <AnchorPane prefHeight="400.0" prefWidth="634.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="240.0" prefWidth="320.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="43.0" layoutY="131.0" prefHeight="17.0" prefWidth="191.0" text="LogIn Page" textFill="WHITE">
                <font>
