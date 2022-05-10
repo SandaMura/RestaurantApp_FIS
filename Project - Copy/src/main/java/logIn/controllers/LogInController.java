@@ -1,16 +1,14 @@
 package logIn.controllers;
 
-import App.RestaurantApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import logIn.exceptions.loginFailed;
+import logIn.services.DBUtils;
 import logIn.services.UserSearch;
 
 import java.io.IOException;
@@ -108,15 +106,17 @@ public class LogInController {
 
     public void registerButton(ActionEvent actionEvent) throws IOException {
        // AlertBox("The user wants to create a new account");
-       // DBUtils.changeScene(actionEvent,"register.fxml", "Register form", null, null, null);
+        DBUtils.changeScene(actionEvent,"register.fxml", "Register form", null, null, null);
 
-        FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("register.fxml"));
+        /*FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("register.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         System.out.println("DEBUG: Deschide fereastra de login!");
         Stage stage2=null;
         stage2.setTitle("Project_FIS_restaurant");
         stage2.setScene(scene);
         stage2.show();
+
+         */
         AlertBox("The changeScene method happened");
     }
 }

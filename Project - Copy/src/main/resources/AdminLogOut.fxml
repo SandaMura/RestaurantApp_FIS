@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logOut.logOutController">
+   <children>
+      <Button fx:id="AdminLogOut" layoutX="186.0" layoutY="209.0" mnemonicParsing="false" onAction="#logout" text=" Yes, Log out" />
+      <Label layoutX="200.0" layoutY="146.0" text="Do you want to log out from the app?" />
+      <Label layoutX="90.0" layoutY="81.0" text="Hello, admin!" />
+      <Button fx:id="backToMainAdmin" layoutX="301.0" layoutY="209.0" mnemonicParsing="false" onAction="#backToMainAdmin" text="No, back to main page" />
+   </children>
+</AnchorPane>

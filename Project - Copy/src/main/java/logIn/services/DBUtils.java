@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 
 import javafx.event.ActionEvent;
 import java.io.IOException;
+import java.util.Objects;
 
 public class DBUtils { ///helper class
 
@@ -31,7 +32,7 @@ public class DBUtils { ///helper class
         }else{ //go to sign up
 
             try{
-                root= FXMLLoader.load(DBUtils.class.getResource(fxmlFile));
+                root= FXMLLoader.load(Objects.requireNonNull(DBUtils.class.getResource(fxmlFile)));
                 AlertBox("FXML Loader cu register.fxml");
 
             }catch(IOException eee){
