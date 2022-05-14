@@ -15,8 +15,9 @@ public class UserSearch {
             //System.out.println
             if(user.getRole().equals("Customer"));
             {
-                if (Objects.equals(username, user.getUsername()) && Objects.equals(password, user.getPassword())){
+                if (Objects.equals(username, user.getUsername()) && Objects.equals(UserService.encodePassword(username,password), user.getPassword())){
                    found=true;
+                   return found;
                 }
 
 
@@ -31,13 +32,14 @@ public class UserSearch {
             //System.out.println
             if(user.getRole().equals("Cook"))
             {
-                if (Objects.equals(username, user.getUsername()) && Objects.equals(password, user.getPassword())){
+                if (Objects.equals(username, user.getUsername()) && Objects.equals(UserService.encodePassword(username,password), user.getPassword())){
                     found=true;
+                    return found;
                 }
 
             }
          }  if(!found) throw new loginFailed();
-                 return true;
+                 return found;
        }
 public static boolean  searchUserAdmin(String username, String password) throws loginFailed {
         boolean found=false;

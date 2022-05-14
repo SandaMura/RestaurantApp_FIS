@@ -97,7 +97,7 @@ public class LogInController {
                 Stage stage;
                 Parent root;
                 stage = (Stage) loginButton.getScene().getWindow();
-                root = FXMLLoader.load(getClass().getClassLoader().getResource("Cook_view.fxml"));
+                root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("Cook_view.fxml"));
 
                 stage.setScene(new Scene(root, 600, 450));
                 stage.show();
