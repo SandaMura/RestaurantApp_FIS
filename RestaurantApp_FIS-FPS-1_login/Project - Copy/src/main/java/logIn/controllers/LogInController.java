@@ -61,44 +61,69 @@ public class LogInController {
         try {
             if (customerCheckRB.isSelected()) {
                 //search in database for the customer role
-               AlertBox("Utilizatorul este CUSTOMER");
+                AlertBox("Utilizatorul este CUSTOMER");
                 System.out.println("DEBUG: Utilizator incearca sa se logheze drept CUSTOMER");
                 if (UserSearch.searchUserCustomer(usernameField.getText(), passwordField.getText())) {
                     ///change the scene
-                    System.out.println("DEBUG: Utilizator s-a logat CUSTOMER");
+
+                    Stage stage;
+                    Parent root;
+                    stage = (Stage) loginButton.getScene().getWindow();
+                    root = FXMLLoader.load(getClass().getClassLoader().getResource("Customer_view.fxml"));
+
+                    stage.setScene(new Scene(root, 600, 450));
+                    stage.show();
+
                 }
 
+                System.out.println("DEBUG: Utilizator s-a logat CUSTOMER");
             }
 
-            if (cookCheckRB.isSelected()) {
-                ///search in database for the cook role
-                AlertBox("Utilizatorul este COOK");
-                System.out.println("DEBUG: Utilizator incearca sa se logheze drept COOK");
 
-                if (UserSearch.searchUserCook(usernameField.getText(), passwordField.getText())) {
+
+        if (cookCheckRB.isSelected()) {
+            ///search in database for the cook role
+            AlertBox("Utilizatorul este COOK");
+            System.out.println("DEBUG: Utilizator incearca sa se logheze drept COOK");
+
+            if (UserSearch.searchUserCook(usernameField.getText(), passwordField.getText())) {
+                ///change the scene
+                Stage stage;
+                Parent root;
+                stage = (Stage) loginButton.getScene().getWindow();
+                root = FXMLLoader.load(getClass().getClassLoader().getResource("Cook_view.fxml"));
+
+                stage.setScene(new Scene(root, 600, 450));
+                stage.show();
+                System.out.println("DEBUG: Utilizator s-a logat COOK");
+            }
+        }
+        if (adminCheckRB.isSelected()) {
+            if (CUIfield.getText() == "CUI111") {
+                System.out.println("DEBUG: Utilizator incearca sa se logheze drept ADMIN");
+                AlertBox("Utilizatorul este ADMIN");
+                if (UserSearch.searchUserAdmin(usernameField.getText(), passwordField.getText())) {
                     ///change the scene
-                    System.out.println("DEBUG: Utilizator s-a logat COOK");
+
+                    Stage stage;
+                    Parent root;
+                    stage = (Stage) loginButton.getScene().getWindow();
+                    root = FXMLLoader.load(getClass().getClassLoader().getResource("Customer_view.fxml"));
+
+                    stage.setScene(new Scene(root, 600, 450));
+                    stage.show();
+
+                    System.out.println("DEBUG: Utilizator s-a logat ADMIN");
                 }
+            } else {
+                AlertBox("Adminul nu a introdus CUI corect");
+
             }
-            if (adminCheckRB.isSelected()) {
-                if (CUIfield.getText() == "CUI111") {
-                    System.out.println("DEBUG: Utilizator incearca sa se logheze drept ADMIN");
-                    AlertBox("Utilizatorul este ADMIN");
-                    if (UserSearch.searchUserAdmin(usernameField.getText(), passwordField.getText())) {
-                        ///change the scene
-                        System.out.println("DEBUG: Utilizator s-a logat ADMIN");
-                    }
-                }
-                else{
-                    AlertBox("Adminul nu a introdus CUI corect");
-
-            } }}catch(loginFailed incorrect){
-                loginFailed.setText(incorrect.getMessage());}
+        }
+    }catch(loginFailed incorrect){
+                loginFailed.setText(incorrect.getMessage());
+               }
             }
-
-
-
-
     public void exitButtonAction(javafx.event.ActionEvent actionEvent) {
         Stage stage=(Stage) ExitButton.getScene().getWindow();
         stage.close();

@@ -36,14 +36,50 @@ public class logOutController{
 
 
     public void backToMainAdmin(ActionEvent actionEvent) {
+
+
+
         System.out.println("backToMainAdmin method");
+
+        Stage stage;
+        Parent root;
+        stage = (Stage) loginButton.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getClassLoader().getResource("Admin_view.fxml"));
+
+        stage.setScene(new Scene(root, 600, 450));
+        stage.show();
+
+
     }
 
     public void backToCookMain(ActionEvent actionEvent) {
+
+
         System.out.println("backToCookMain method");
+
+        Stage stage;
+        Parent root;
+        stage = (Stage) loginButton.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getClassLoader().getResource("Cook_view.fxml"));
+
+        stage.setScene(new Scene(root, 600, 450));
+        stage.show();
+
+        System.out.println("DEBUG: Utilizator s-a logat ADMIN");
     }
 
     public void backToCustomerMain(ActionEvent actionEvent) {
-        System.out.println("backToCookMain method");
+
+
+        System.out.println("backToCustomerMain method");
+
+        Stage stage;
+        Parent root;
+        stage = (Stage) loginButton.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getClassLoader().getResource("Customer_view.fxml"));
+
+        stage.setScene(new Scene(root, 600, 450));
+        stage.show();
+
     }
 }
