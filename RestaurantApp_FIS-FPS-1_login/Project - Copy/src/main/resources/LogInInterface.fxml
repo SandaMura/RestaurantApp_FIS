@@ -19,7 +19,7 @@
       <AnchorPane prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <AnchorPane prefHeight="240.0" prefWidth="320.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="240.0" prefWidth="320.0" style="-fx-background-color: D58480;" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="43.0" layoutY="131.0" prefHeight="17.0" prefWidth="191.0" text="LogIn Page" textFill="WHITE">
                <font>
@@ -65,6 +65,7 @@
             <Button fx:id="ExitButton" layoutX="551.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitButtonAction" text="Exit" textFill="RED" />
             <RadioButton fx:id="customerCheckRB" layoutX="263.0" layoutY="159.0" mnemonicParsing="false" text="I am a customer" textFill="#fcfcfc" />
             <RadioButton fx:id="cookCheckRB" layoutX="263.0" layoutY="192.0" mnemonicParsing="false" text="I am a cook" textFill="#fcfcfc" />
+
          </children>
       </AnchorPane>
    </center>

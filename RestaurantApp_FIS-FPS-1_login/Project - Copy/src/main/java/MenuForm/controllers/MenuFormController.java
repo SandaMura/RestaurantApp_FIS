@@ -21,6 +21,8 @@ import javax.swing.*;
 import java.io.File;
 import java.text.BreakIterator;
 
+import static logIn.services.DBUtils.AlertBox;
+
 
 public class MenuFormController{
 
@@ -44,26 +46,11 @@ public class MenuFormController{
             private ImageIcon picture;
     Stage stage;
 
-    public void AttachAction(java.awt.event.ActionEvent event){
-       /* stage = (Stage) ScrollingForm1.getScene().getWindow();
-        System.out.println("You successfully logged out");
-        stage.close();*/
 
-       JFileChooser chooser = new JFileChooser();
-        chooser.showOpenDialog(null);
-        File f = chooser.getSelectedFile();
-        String filename = f.getAbsolutePath();
-        txt_filename.setText(filename);///show address of the image
-        /*
-        Image getPath = null;
-        ImageIcon icon = new ImageIcon(filename);
-        Image image = new Image(filename);
-        picture.setImage(image);*/
-    }
 
     public void SubmitAction(ActionEvent event){
 
-
+        System.out.println("vreau sa inserez" + food_name.getText());
             try {
                 MenuService.addFood(food_name.getText(), food_ingredients.getText(), Integer.parseInt(prep_time.getText()), txt_filename.getText());
                 System.out.println("Dish created and added to the database successfully!");
@@ -76,5 +63,22 @@ public class MenuFormController{
     }
 
 
+    public void AttachAction(ActionEvent actionEvent) {
+         /* stage = (Stage) ScrollingForm1.getScene().getWindow();
+        System.out.println("You successfully logged out");
+        stage.close();*/
+
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        AlertBox("fisier " + f.toString());
+        String filename = f.toString();
+        txt_filename.setText(filename);///show address of the image
+
+       /* Image getPath = null;
+        ImageIcon icon = new ImageIcon(filename);
+        Image image = new Image(filename);
+        picture.setImage(image);*/
+    }
 }
 

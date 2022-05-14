@@ -19,9 +19,9 @@ public class UserSearch {
                    found=true;
                 }
 
-                throw new loginFailed();
+
              }
-    }   if(found==false) throw new loginFailed();   return true;
+    }   if(!found) throw new loginFailed();   return found;
      }
 
 
@@ -36,7 +36,7 @@ public class UserSearch {
                 }
 
             }
-         }  if(found==false) throw new loginFailed();
+         }  if(!found) throw new loginFailed();
                  return true;
        }
 public static boolean  searchUserAdmin(String username, String password) throws loginFailed {
@@ -45,13 +45,18 @@ public static boolean  searchUserAdmin(String username, String password) throws 
             //System.out.println
             if(user.getRole().equals("Admin"))
             {
-                if (Objects.equals(username, user.getUsername()) && Objects.equals(password, user.getPassword())){
-                    found=true;
+                if (Objects.equals(username, user.getUsername()) && Objects.equals(UserService.encodePassword(username,password), user.getPassword())){
+                    found = true;
+                    return found;
                 }
 
-                throw new loginFailed();
+
             }
-        }  if(found==false) throw new loginFailed();return true;
+        }
+        if(!found) throw new loginFailed();
+        return found;
+
     }
 
 }
+

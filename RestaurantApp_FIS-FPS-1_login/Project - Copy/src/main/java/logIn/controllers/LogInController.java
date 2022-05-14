@@ -43,6 +43,8 @@ public class LogInController {
     private TextField CUIfield;
 
 
+    @FXML
+    private Button Test;
 
     private void AlertBox(String message){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -103,21 +105,25 @@ public class LogInController {
             }
         }
         if (adminCheckRB.isSelected()) {
-            if (CUIfield.getText() == "CUI111") {
-                System.out.println("DEBUG: Utilizator incearca sa se logheze drept ADMIN");
-                AlertBox("Utilizatorul este ADMIN");
+            if (CUIfield.getText().equals("CUI111")) {
+                System.out.println("DEBUG: Utilizator incearca sa se logheze drept ADMIN cu username-ulRATATATA " + usernameField.getText() );
+                //AlertBox("Utilizatorul este ADMIN");
                 if (UserSearch.searchUserAdmin(usernameField.getText(), passwordField.getText())) {
                     ///change the scene
-
+                    ///AlertBox("Utilizatorul este ADMIN si are cont");
+                    System.out.println("DEBUG: ADMINN");
                     Stage stage;
                     Parent root;
                     stage = (Stage) loginButton.getScene().getWindow();
-                    root = FXMLLoader.load(getClass().getClassLoader().getResource("Customer_view.fxml"));
+                    root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("Admin_view.fxml"));
 
                     stage.setScene(new Scene(root, 600, 450));
                     stage.show();
 
                     System.out.println("DEBUG: Utilizator s-a logat ADMIN");
+                } else{
+                   // AlertBox("Utilizatorul este ADMIN si NU are cont");
+                    System.out.println("DEBUG: else ADMINN");
                 }
             } else {
                 AlertBox("Adminul nu a introdus CUI corect");
@@ -126,13 +132,18 @@ public class LogInController {
         }
     }catch(loginFailed incorrect){
                 loginFailed.setText(incorrect.getMessage());
+            AlertBox("Ati introdus username-ul sau parola incorecta");
                } catch (IOException ex) {
+
+            AlertBox("Ati introdus username-ul sau parola incorecta");
             throw new RuntimeException(ex);
+
         }
     }
     public void exitButtonAction(javafx.event.ActionEvent actionEvent) {
         Stage stage=(Stage) ExitButton.getScene().getWindow();
         stage.close();
+
     }
 
     public void registerButton(ActionEvent actionEvent) {
@@ -153,4 +164,20 @@ public class LogInController {
 
         AlertBox("The changeScene method happened");
     }
+    /*
+    public void test(ActionEvent actionEvent) {
+
+        Stage stage;
+        Parent root;
+        stage = (Stage) Test.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("FormInterface.fxml"));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    */
+
 }
