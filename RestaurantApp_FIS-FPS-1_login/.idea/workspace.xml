@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="Update 14 May">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Restaurant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RestaurantApp_FIS-FPS-1_login.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/controllers/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/controllers/LogInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logOut/logOutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logOut/logOutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/src/main/java/com/example/project/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/src/main/java/com/example/project/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/src/main/resources/com/example/project/hello-view.fxml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="299FU3Hva5YbC7njTMXWjLj0McE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/sanda/OneDrive - Universitatea Politehnica Timisoara/AN 2 2021-2022/sem2/Labs/FIS/tema2/Project - Copy/RestaurantApp_FIS/RestaurantApp_FIS-FPS-1_login/Project - Copy"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="" />
+      <created>1652517406586</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652517406586</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Update 14 May">
+      <created>1652517485804</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652517485804</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update 14 May" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 14 May" />
+  </component>
+</project>
