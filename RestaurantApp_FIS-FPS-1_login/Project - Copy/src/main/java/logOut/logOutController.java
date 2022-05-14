@@ -2,10 +2,14 @@ package logOut;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.*;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
+import javafx.stage.*;
 import logIn.services.DBUtils;
+
+import java.io.IOException;
 
 public class logOutController{
 
@@ -21,7 +25,15 @@ public class logOutController{
     @FXML
             private Button AdminLogOut;
 
-    Stage stage;
+    @FXML
+            private Button backToMainAdmin;
+
+    @FXML
+            private Button backToMainCook;
+
+    @FXML
+            private Button backToMainCustomer;
+   Stage stage;
 
 
 
@@ -43,8 +55,12 @@ public class logOutController{
 
         Stage stage;
         Parent root;
-        stage = (Stage) loginButton.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getClassLoader().getResource("Admin_view.fxml"));
+        stage = (Stage) backToMainAdmin.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(getClass().getClassLoader().getResource("Admin_view.fxml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
         stage.setScene(new Scene(root, 600, 450));
         stage.show();
@@ -59,8 +75,12 @@ public class logOutController{
 
         Stage stage;
         Parent root;
-        stage = (Stage) loginButton.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getClassLoader().getResource("Cook_view.fxml"));
+        stage = (Stage) backToMainCook.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(getClass().getClassLoader().getResource("Cook_view.fxml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
         stage.setScene(new Scene(root, 600, 450));
         stage.show();
@@ -75,8 +95,12 @@ public class logOutController{
 
         Stage stage;
         Parent root;
-        stage = (Stage) loginButton.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getClassLoader().getResource("Customer_view.fxml"));
+        stage = (Stage) backToMainCustomer.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(getClass().getClassLoader().getResource("Customer_view.fxml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
         stage.setScene(new Scene(root, 600, 450));
         stage.show();

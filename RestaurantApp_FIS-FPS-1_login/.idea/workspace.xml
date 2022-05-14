@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="Update 14 May">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Restaurant.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RestaurantApp_FIS-FPS-1_login.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="Update 14 May again">
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/timer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Restaurant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Restaurant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Restaurant-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Restaurant-database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/controllers/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/controllers/LogInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/controllers/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logOut/logOutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logOut/logOutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/src/main/java/com/example/project/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/src/main/java/com/example/project/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/src/main/resources/com/example/project/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/FormInterface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/FormInterface.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/register.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +25,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="299FU3Hva5YbC7njTMXWjLj0McE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -64,7 +62,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652517485804</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update 14 May">
+      <created>1652522961871</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652522961871</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update 14 May again">
+      <created>1652522973568</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652522973568</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -80,6 +92,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update 14 May" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 14 May" />
+    <MESSAGE value="Update 14 May again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 14 May again" />
   </component>
 </project>

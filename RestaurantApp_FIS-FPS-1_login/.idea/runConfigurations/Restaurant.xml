@@ -10,7 +10,9 @@
           </option>
           <option name="goals">
             <list>
+              <option value="clean" />
               <option value="install" />
+              <option value="javafx:run" />
             </list>
           </option>
           <option name="pomFileName" />

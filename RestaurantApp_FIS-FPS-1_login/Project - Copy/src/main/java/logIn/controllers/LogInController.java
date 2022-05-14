@@ -1,7 +1,11 @@
 package logIn.controllers;
 
+import App.RestaurantApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.*;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
@@ -122,26 +126,31 @@ public class LogInController {
         }
     }catch(loginFailed incorrect){
                 loginFailed.setText(incorrect.getMessage());
-               }
-            }
+               } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
     public void exitButtonAction(javafx.event.ActionEvent actionEvent) {
         Stage stage=(Stage) ExitButton.getScene().getWindow();
         stage.close();
     }
 
-    public void registerButton(ActionEvent actionEvent) throws IOException {
+    public void registerButton(ActionEvent actionEvent) {
        // AlertBox("The user wants to create a new account");
-        DBUtils.changeScene(actionEvent,"register.fxml", "Register form", null, null, null);
+        Stage stage;
+        Parent root;
+        stage = (Stage) registerButton.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("register.fxml"));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        /*FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("register.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        System.out.println("DEBUG: Deschide fereastra de login!");
-        Stage stage2=null;
-        stage2.setTitle("Project_FIS_restaurant");
-        stage2.setScene(scene);
-        stage2.show();
 
-         */
+
+
         AlertBox("The changeScene method happened");
     }
 }
