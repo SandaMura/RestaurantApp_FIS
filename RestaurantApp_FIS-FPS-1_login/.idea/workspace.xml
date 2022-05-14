@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="14 may - Log Out and Customer, Cook, Admin pages">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Cook/CookView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Customer/CustomerView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/Cook_view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/Customer_view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Restaurant-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Restaurant-database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Admin/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Admin/AdminView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/App/RestaurantApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/App/RestaurantApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/controllers/MenuFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/controllers/MenuFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/controllers/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/controllers/LogInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/services/UserSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/services/UserSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logOut/logOutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logOut/logOutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/AdminLogOut.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/AdminLogOut.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/Admin_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/Admin_view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/CookLogOut.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/CookLogOut.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/CustomerLogOut.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/CustomerLogOut.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/FormInterface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/FormInterface.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="14 may - Log Out and Customer, Cook, Admin pages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
