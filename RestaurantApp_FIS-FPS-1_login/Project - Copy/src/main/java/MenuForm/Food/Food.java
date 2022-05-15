@@ -6,11 +6,14 @@ public class Food {
     private Integer time;
     private String picture;///retine path-ul pt imagine
 
-    public Food(String name, String ingredients, Integer time, String picture) {
+    private Double price;
+
+    public Food(String name, String ingredients, Integer time, String picture, Double price) {
         this.name = name;
         this.ingredients = ingredients;
         this.time = time;
         this.picture=picture;
+        this.price=price;
     }
 
     public String getName() {
@@ -21,4 +24,6 @@ public class Food {
     }
     public Integer getTime() {return time;}
     public String getPicturePath(){return picture;}
+
+    public Double getPrice(){return price;}
 }

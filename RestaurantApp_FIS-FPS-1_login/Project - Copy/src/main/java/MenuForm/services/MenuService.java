@@ -34,9 +34,9 @@ public class MenuService {
 
     }
 
-    public static void addFood(String name, String ingredients, Integer time, String picturePath) throws foodAlreadyExistsException{
+    public static void addFood(String name, String ingredients, Integer time, String picturePath, Double price) throws foodAlreadyExistsException{
 
-        foodRepository.insert(new Food(name, ingredients, time, picturePath));
+        foodRepository.insert(new Food(name, ingredients, time, picturePath, price));
     }
 
     private static void checkFoodDoesNotAlreadyExist(String name) throws foodAlreadyExistsException {

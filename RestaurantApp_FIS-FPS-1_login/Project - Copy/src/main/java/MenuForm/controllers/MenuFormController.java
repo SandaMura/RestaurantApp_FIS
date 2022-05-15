@@ -48,6 +48,9 @@ public class MenuFormController{
     @FXML
             private TextField prep_time;
 
+    @FXML
+           private TextField price;
+
 
     @FXML
             private ImageView Picture;
@@ -62,7 +65,7 @@ public class MenuFormController{
 
         System.out.println("vreau sa inserez" + food_name.getText());
             try {
-                MenuService.addFood(food_name.getText(), food_ingredients.getText(), Integer.parseInt(prep_time.getText()), txt_filename.getText());
+                MenuService.addFood(food_name.getText(), food_ingredients.getText(), Integer.parseInt(prep_time.getText()), txt_filename.getText(), Double.parseDouble(price.getText()));
                 AlertBox("Dish created and added to the database successfully!");
             } catch (foodAlreadyExistsException e) {
                 System.out.println(e.getMessage());
