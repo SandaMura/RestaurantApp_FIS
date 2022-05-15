@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="15 mai - Update la Menu Form, am adaugat TextField pentru pret-double">
-      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" afterDir="false" />
-    </list>
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="14 may - Log Out and Customer, Cook, Admin pages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,11 +19,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/.." value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -44,14 +37,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sanda/OneDrive - Universitatea Politehnica Timisoara/AN 2 2021-2022/sem2/Labs/FIS/tema2/Project - Copy/RestaurantApp_FIS/RestaurantApp_FIS-FPS-1_login/Project - Copy&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/sanda/OneDrive - Universitatea Politehnica Timisoara/AN 2 2021-2022/sem2/Labs/FIS/tema2/Project - Copy/RestaurantApp_FIS/RestaurantApp_FIS-FPS-1_login/Project - Copy"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sanda\OneDrive - Universitatea Politehnica Timisoara\AN 2 2021-2022\sem2\Labs\FIS\tema2\Project - Copy\RestaurantApp_FIS\RestaurantApp_FIS-FPS-1_login\Project - Copy\src\main\java" />
@@ -101,28 +94,7 @@
       <option name="project" value="LOCAL" />
       <updated>1652538354189</updated>
     </task>
-    <task id="LOCAL-00006" summary="15 mai - Update la baza de date, am adaugat field &quot;price&quot; in cod">
-      <created>1652646770538</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1652646770538</updated>
-    </task>
-    <task id="LOCAL-00007" summary="15 mai - Update la baza de date, am adaugat field &quot;price&quot; in cod">
-      <created>1652647636419</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1652647636419</updated>
-    </task>
-    <task id="LOCAL-00008" summary="15 mai - Update la Menu Form, am adaugat TextField pentru pret-double">
-      <created>1652647804047</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1652647804047</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,19 +102,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="FPS-21" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -154,8 +114,6 @@
     <MESSAGE value="14 may - LogIn and Register works!" />
     <MESSAGE value="14 may - Merge insert in food database" />
     <MESSAGE value="14 may - Log Out and Customer, Cook, Admin pages" />
-    <MESSAGE value="15 mai - Update la baza de date, am adaugat field &quot;price&quot; in cod" />
-    <MESSAGE value="15 mai - Update la Menu Form, am adaugat TextField pentru pret-double" />
-    <option name="LAST_COMMIT_MESSAGE" value="15 mai - Update la Menu Form, am adaugat TextField pentru pret-double" />
+    <option name="LAST_COMMIT_MESSAGE" value="14 may - Log Out and Customer, Cook, Admin pages" />
   </component>
 </project>
