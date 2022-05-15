@@ -12,6 +12,13 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Objects;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import javafx.collections.ObservableList;
+import java.util.Iterator;
+
+
 
 import static MenuForm.services.FileSystemService.getPathToFile;
 
@@ -32,6 +39,13 @@ public class MenuService {
 
 
 
+    }
+    public List<Food> all(){
+        ArrayList<Food> rezulat=new ArrayList<>();
+        Iterator<Food> it=foodRepository.find().iterator();
+        while (it.hasNext())
+            rezulat.add(it.next());
+        return  rezulat;
     }
 
     public static void addFood(String name, String ingredients, Integer time, String picturePath) throws foodAlreadyExistsException{
