@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="15 mai - Update la baza de date, am adaugat field &quot;price&quot; in cod">
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/App/RestaurantApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/App/RestaurantApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/FormInterface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/FormInterface.fxml" afterDir="false" />
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="15 mai - Update la Menu Form, am adaugat TextField pentru pret-double">
+      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652647636419</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="15 mai - Update la Menu Form, am adaugat TextField pentru pret-double">
+      <created>1652647804047</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652647804047</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,6 +155,7 @@
     <MESSAGE value="14 may - Merge insert in food database" />
     <MESSAGE value="14 may - Log Out and Customer, Cook, Admin pages" />
     <MESSAGE value="15 mai - Update la baza de date, am adaugat field &quot;price&quot; in cod" />
-    <option name="LAST_COMMIT_MESSAGE" value="15 mai - Update la baza de date, am adaugat field &quot;price&quot; in cod" />
+    <MESSAGE value="15 mai - Update la Menu Form, am adaugat TextField pentru pret-double" />
+    <option name="LAST_COMMIT_MESSAGE" value="15 mai - Update la Menu Form, am adaugat TextField pentru pret-double" />
   </component>
 </project>
