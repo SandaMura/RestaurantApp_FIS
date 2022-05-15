@@ -9,7 +9,6 @@ import javafx.stage.Stage;
 import logIn.services.UserService;
 
 import java.io.IOException;
-import Timer.Time;
 
 public class RestaurantApplication extends Application{
 
@@ -22,11 +21,8 @@ public class RestaurantApplication extends Application{
         //FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("register.fxml"));
         //FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("FormInterface.fxml"));
 
-        //FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("LogInInterface.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("FormInterface.fxml"));
         System.out.println("DEBUG: Deschide fereastra de login!");
-
-
-        FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("timer.fxml"));
 
         Scene scene = new Scene(fxmlLoader.load(), 600, 450);
         System.out.println("DEBUG: Deschide fereastra de login!");
@@ -36,8 +32,6 @@ public class RestaurantApplication extends Application{
     }
 
     public static void main(String[] args) {
-      launch();
-
-
+        launch();
     }
 }
