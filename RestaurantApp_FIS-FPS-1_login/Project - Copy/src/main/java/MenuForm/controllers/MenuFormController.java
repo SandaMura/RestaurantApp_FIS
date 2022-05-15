@@ -2,6 +2,7 @@ package MenuForm.controllers;
 
 
 import App.RestaurantApplication;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -57,23 +58,38 @@ public class MenuFormController{
 
     @FXML
             private Button Back;
+    @FXML
+        private Button ShowButton;
     Stage stage;
 
 
-
+    @FXML public void initialize(){
+        ShowButton.setOnAction(this::ShowData);
+    }
+    @FXML
+    public void ShowData(ActionEvent event) {
+        Stage stage;
+        Parent root;
+        stage = (Stage) ShowButton.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("DisplayMenu.fxml"));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public void SubmitAction(ActionEvent event){
 
-        System.out.println("vreau sa inserez" + food_name.getText());
+            System.out.println("vreau sa inserez" + food_name.getText());
             try {
                 MenuService.addFood(food_name.getText(), food_ingredients.getText(), Integer.parseInt(prep_time.getText()), txt_filename.getText(), Double.parseDouble(price.getText()));
                 AlertBox("Dish created and added to the database successfully!");
             } catch (foodAlreadyExistsException e) {
                 System.out.println(e.getMessage());
             }
+        }
 
-
-
-    }
 
 
     public void AttachAction(ActionEvent actionEvent) {

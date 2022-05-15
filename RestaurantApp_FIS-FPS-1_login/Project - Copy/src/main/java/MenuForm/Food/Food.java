@@ -1,6 +1,7 @@
 package MenuForm.Food;
 import org.dizitart.no2.objects.Id;
 public class Food {
+    @Id
     private String name;
     private String ingredients;
     private Integer time;
@@ -15,6 +16,8 @@ public class Food {
         this.picture=picture;
         this.price=price;
     }
+
+    public Food(){}
 
     public String getName() {
         return name;

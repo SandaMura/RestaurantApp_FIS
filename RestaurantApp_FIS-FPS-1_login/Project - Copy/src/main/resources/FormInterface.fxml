@@ -6,8 +6,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
-<ScrollPane fx:id="ScrollingForm1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuForm.controllers.MenuFormController">
+<ScrollPane fx:id="ScrollingForm1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuForm.controllers.MenuFormController">
   <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="628.0" style="-fx-background-color: #56738A;">
          <children>
@@ -26,6 +27,7 @@
             <TextField fx:id="prep_time" layoutX="147.0" layoutY="112.0" />
             <TextField fx:id="price" layoutX="444.0" layoutY="94.0" prefHeight="25.0" prefWidth="108.0" />
             <Label layoutX="403.0" layoutY="98.0" text="Price" textFill="#faf0c5" />
+            <Button fx:id="ShowButton" layoutX="30.0" layoutY="322.0" mnemonicParsing="false" text="Show All" />
          </children></AnchorPane>
   </content>
 </ScrollPane>

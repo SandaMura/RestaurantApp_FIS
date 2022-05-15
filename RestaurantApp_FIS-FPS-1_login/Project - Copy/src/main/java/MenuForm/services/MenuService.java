@@ -3,6 +3,7 @@ package MenuForm.services;
 //import logIn.exceptions.UsernameAlreadyExistsException;
 //import logIn.model.User;
 import org.dizitart.no2.Nitrite;
+import org.dizitart.no2.objects.Cursor;
 import org.dizitart.no2.objects.ObjectRepository;
 //import logIn.exceptions.UsernameAlreadyExistsException;
 import MenuForm.Food.Food;
@@ -60,6 +61,10 @@ public class MenuService {
             if (Objects.equals(name, food.getName()))
                 throw new foodAlreadyExistsException(name);
         }
+    }
+
+    public static Cursor<Food> getAllFood(){
+        return foodRepository.find();
     }
 
     private static MessageDigest getMessageDigest() {
