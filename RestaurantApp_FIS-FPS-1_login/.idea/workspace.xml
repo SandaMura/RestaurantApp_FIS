@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="15 mai - Update la baza de date, am adaugat field &quot;price&quot; in cod">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/Food/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/Food/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/controllers/MenuFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/controllers/MenuFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/services/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/services/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/App/RestaurantApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/App/RestaurantApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/FormInterface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/FormInterface.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652646770538</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="15 mai - Update la baza de date, am adaugat field &quot;price&quot; in cod">
+      <created>1652647636419</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652647636419</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
