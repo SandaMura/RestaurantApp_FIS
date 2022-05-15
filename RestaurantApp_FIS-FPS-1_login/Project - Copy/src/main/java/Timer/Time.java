@@ -1,4 +1,4 @@
-/*package Timer
+package Timer;
 
         public class Time {
 
@@ -6,7 +6,7 @@
             private int minute;
             private int second;
 
-            publicTime(int hour, int minute, int second) {
+            void publicTime(int hour, int minute, int second) {
                 this.hour = hour;
                 this.minute = minute;
                 this.second = second;
@@ -46,5 +46,4 @@
         }
 
 
-        }
-*/
+

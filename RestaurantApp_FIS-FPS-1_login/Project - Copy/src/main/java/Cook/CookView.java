@@ -21,6 +21,7 @@ public class CookView {
 
         Stage stage;
         Parent root;
+        System.out.println("Cook view");
         stage = (Stage) goToLogOut.getScene().getWindow();
         try {
             root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("CookLogOut.fxml"));
