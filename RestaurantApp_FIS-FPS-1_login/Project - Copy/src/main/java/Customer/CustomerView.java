@@ -1,42 +1,35 @@
-package Admin;
+package Customer;
 
 import App.RestaurantApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.*;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import logIn.exceptions.loginFailed;
-import logIn.services.DBUtils;
-import logIn.services.UserSearch;
 
 import java.io.IOException;
+import java.util.Objects;
 
-
-
-
-public class AdminView {
-
-
-    @FXML
-    private Button OpenFillForm;
+public class CustomerView {
 
     @FXML
     private Button goToLogOut;
 
+    @FXML
+    private Button goToTimerScene;
 
-    public void OpenForm(ActionEvent actionEvent) {
 
+
+    @FXML
+    public void goToTimerScene(ActionEvent actionEvent)
+    {
         Stage stage;
         Parent root;
-        stage = (Stage) OpenFillForm.getScene().getWindow();
+        stage = (Stage) goToTimerScene.getScene().getWindow();
         try {
-            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("FormInterface.fxml"));
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("timer.fxml")));
             stage.setScene(new Scene(root, 600, 450));
             stage.show();
         } catch (IOException e) {
@@ -44,13 +37,14 @@ public class AdminView {
         }
     }
 
-    public void goToLogOut(ActionEvent actionEvent) {
 
+
+    public void goToLogOutScene(ActionEvent actionEvent) {
         Stage stage;
         Parent root;
         stage = (Stage) goToLogOut.getScene().getWindow();
         try {
-            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("AdminLogOut.fxml"));
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("CustomerLogOut.fxml")));
             stage.setScene(new Scene(root, 600, 450));
             stage.show();
         } catch (IOException e) {

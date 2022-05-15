@@ -1,5 +1,6 @@
 package logOut;
 
+import App.RestaurantApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,6 +11,7 @@ import javafx.stage.*;
 import logIn.services.DBUtils;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class logOutController{
 
@@ -37,12 +39,49 @@ public class logOutController{
 
 
 
-    public void logout(javafx.event.ActionEvent actionEvent) {
+    public void logout2(javafx.event.ActionEvent actionEvent) {
 
-        stage = (Stage) Scene_LogOut.getScene().getWindow();
-        System.out.println("You successfully logged out");
+        Stage stage;
+        Parent root;
+        stage = (Stage) CookLogOut.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("LogInInterface.fxml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
-        DBUtils.changeScene(actionEvent, "LogInInterface.fxml", "Log in!", null, null, null);
+        stage.setScene(new Scene(root, 600, 450));
+        stage.show();
+
+    }
+    public void logout1(javafx.event.ActionEvent actionEvent) {
+
+        Stage stage;
+        Parent root;
+        stage = (Stage) CustomerLogOut.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("LogInInterface.fxml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        stage.setScene(new Scene(root, 600, 450));
+        stage.show();
+
+    }
+    public void logout3(javafx.event.ActionEvent actionEvent) {
+
+        Stage stage;
+        Parent root;
+        stage = (Stage) AdminLogOut.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("LogInInterface.fxml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        stage.setScene(new Scene(root, 600, 450));
+        stage.show();
 
     }
 
@@ -75,35 +114,31 @@ public class logOutController{
 
         Stage stage;
         Parent root;
-        stage = (Stage) backToMainCook.getScene().getWindow();
+        stage = (Stage) CookLogOut.getScene().getWindow();
         try {
-            root = FXMLLoader.load(getClass().getClassLoader().getResource("Cook_view.fxml"));
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("Cook_view.fxml")));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
-
-        stage.setScene(new Scene(root, 600, 450));
-        stage.show();
-
-        System.out.println("DEBUG: Utilizator s-a logat ADMIN");
     }
 
     public void backToCustomerMain(ActionEvent actionEvent) {
 
 
-        System.out.println("backToCustomerMain method");
+        System.out.println("backToCookMain method");
 
         Stage stage;
         Parent root;
-        stage = (Stage) backToMainCustomer.getScene().getWindow();
+        stage = (Stage) CookLogOut.getScene().getWindow();
         try {
-            root = FXMLLoader.load(getClass().getClassLoader().getResource("Customer_view.fxml"));
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("Customer_view.fxml")));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
-
-        stage.setScene(new Scene(root, 600, 450));
-        stage.show();
 
     }
 }
