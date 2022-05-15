@@ -1,65 +1,49 @@
-/*package Timer;
+package Timer;
 
 import App.RestaurantApplication;
-import Timer.Time;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
-import javafx.stage.Stage;
-import javafx.util.Duration;
+import javafx.scene.*;
+import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.*;
+import logIn.services.DBUtils;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.util.Objects;
+
+
+import javafx.fxml.FXML;
+
+import Timer.Time;
+
+//import javax.swing.text.html.ImageView;
+
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 import static logIn.services.DBUtils.AlertBox;
 
+public class Controller{
 
-public class Controller implements Initializable {
-        Time time = new Time("0:0:0");
+    @FXML
+         private Button stopwatchCook;
 
+    @FXML
+         private Button stopwatchClient;
 
-        @FXML
-        private Text timer;
+    @FXML
+            private ImageView picture;
 
-        @FXML
-        private TextField alarmTime;
+    Time stopwatch;
+    public void stopwatchCook(ActionEvent actionEvent) {
+        stopwatch = new Time();
 
-        Timeline timeline= new Timeline(
-                new KeyFrame(Duration.seconds(0.1),
-                        e-> {
-                            if(time.getCurrentTime().equals(alarmTime.getText())){
-                                System.out.println("TIME IS UP!");
-                                Stage stage;
-                                Parent root;
-                                stage = (Stage) timer.getScene().getWindow();
-                                try {
-                                    root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("Customer_view.fxml"));
-                                    stage.setScene(new Scene(root, 600, 450));
-                                    stage.show();
-                                } catch (IOException exception) {
-                                    exception.printStackTrace();
-                                }
-                                AlertBox("TIME IS UP! You will soon recieve your order");
-
-                            }
-                            time.oneSecondPassed();
-                            timer.setText(time.getCurrentTime());
-                        }));
-
-
-        @Override
-        public void initialize(URL url, ResourceBundle resourceBundle) {
-            timer.setText(time.getCurrentTime());
-
-            timeline.setCycleCount(Timeline.INDEFINITE);
-            timeline.play();
-        }
     }
-*/
+
+
+    public void stopwatchClient(ActionEvent actionEvent) {
+          AlertBox(" Your order is in progress for : \n" +  stopwatch.hours_string+ " hours, "+ stopwatch.minutes_string+ " minutes, "+ stopwatch.seconds_string+ " seconds  ! \n It will take approximately as the prep time specified in the menu! Thank you for your patience!");
+    }
+}

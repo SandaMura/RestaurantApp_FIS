@@ -20,6 +20,8 @@ public class CustomerView {
     @FXML
     private Button goToTimerScene;
 
+
+
     @FXML
     public void goToTimerScene(ActionEvent actionEvent)
     {
@@ -35,8 +37,9 @@ public class CustomerView {
         }
     }
 
-    public void goToLogOut(ActionEvent actionEvent)
-    {
+
+
+    public void goToLogOutScene(ActionEvent actionEvent) {
         Stage stage;
         Parent root;
         stage = (Stage) goToLogOut.getScene().getWindow();
@@ -48,5 +51,4 @@ public class CustomerView {
             e.printStackTrace();
         }
     }
-
 }

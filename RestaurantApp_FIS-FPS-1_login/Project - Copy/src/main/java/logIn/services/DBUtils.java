@@ -51,7 +51,7 @@ public class DBUtils { ///helper class
     public static void AlertBox(String s) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Message Here...");
-        alert.setHeaderText("Look, an Information Dialog");
+        //alert.setHeaderText("Look, an Information Dialog");
         alert.setContentText(s);
         alert.showAndWait();
     }

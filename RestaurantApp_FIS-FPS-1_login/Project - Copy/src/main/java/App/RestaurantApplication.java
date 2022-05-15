@@ -23,7 +23,7 @@ public class RestaurantApplication extends Application{
         //FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("FormInterface.fxml"));
 
         //FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("LogInInterface.fxml"));
-        /*System.out.println("DEBUG: Deschide fereastra de login!");
+        System.out.println("DEBUG: Deschide fereastra de login!");
 
 
         FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("timer.fxml"));
@@ -32,12 +32,12 @@ public class RestaurantApplication extends Application{
         System.out.println("DEBUG: Deschide fereastra de login!");
         stage.setTitle("Project_FIS_restaurant");
         stage.setScene(scene);
-        stage.show();*/
+        stage.show();
     }
 
     public static void main(String[] args) {
-        //launch();
+      launch();
 
-        Time stopwatch = new Time();
+
     }
 }

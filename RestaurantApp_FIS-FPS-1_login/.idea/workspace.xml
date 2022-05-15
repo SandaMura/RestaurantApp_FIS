@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="15 mai - first draft for Timer">
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="15 mai - basic Timer StopWatch works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Restaurant-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Restaurant-database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/App/RestaurantApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/App/RestaurantApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Cook/CookView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Cook/CookView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Customer/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Customer/CustomerView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Timer/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Timer/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Timer/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Timer/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/controllers/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/services/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/services/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/Cook_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/Cook_view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/timer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/timer.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652627666694</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="15 mai - basic Timer StopWatch works">
+      <created>1652630113910</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652630113910</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +156,7 @@
     <MESSAGE value="14 may - Merge insert in food database" />
     <MESSAGE value="14 may - Log Out and Customer, Cook, Admin pages" />
     <MESSAGE value="15 mai - first draft for Timer" />
-    <option name="LAST_COMMIT_MESSAGE" value="15 mai - first draft for Timer" />
+    <MESSAGE value="15 mai - basic Timer StopWatch works" />
+    <option name="LAST_COMMIT_MESSAGE" value="15 mai - basic Timer StopWatch works" />
   </component>
 </project>
