@@ -26,7 +26,7 @@ public class RestaurantApplication extends Application{
         System.out.println("DEBUG: Deschide fereastra de login!");
 
 
-        FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("timer.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("LogInInterface.fxml"));
 
         Scene scene = new Scene(fxmlLoader.load(), 600, 450);
         System.out.println("DEBUG: Deschide fereastra de login!");

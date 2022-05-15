@@ -6,6 +6,8 @@ public class Food {
     private Integer time;
     private String picture;///retine path-ul pt imagine
 
+
+
     public Food(String name, String ingredients, Integer time, String picture) {
         this.name = name;
         this.ingredients = ingredients;

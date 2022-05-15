@@ -58,6 +58,7 @@ public class logOutController{
 
         Stage stage;
         Parent root;
+        System.out.println(CustomerLogOut);
         stage = (Stage) CustomerLogOut.getScene().getWindow();
         try {
             root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("LogInInterface.fxml"));
@@ -124,6 +125,7 @@ public class logOutController{
         }
     }
 
+    @FXML
     public void backToCustomerMain(ActionEvent actionEvent) {
 
 
@@ -131,7 +133,8 @@ public class logOutController{
 
         Stage stage;
         Parent root;
-        stage = (Stage) CookLogOut.getScene().getWindow();
+        System.out.println(CookLogOut);
+        stage = (Stage) CustomerLogOut.getScene().getWindow();
         try {
             root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("Customer_view.fxml")));
             stage.setScene(new Scene(root, 600, 450));

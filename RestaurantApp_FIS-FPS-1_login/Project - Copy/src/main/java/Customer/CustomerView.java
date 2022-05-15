@@ -18,7 +18,7 @@ public class CustomerView {
     private Button goToLogOut;
 
     @FXML
-    private Button goToTimerScene;
+    private Button timerButton;
 
 
 
@@ -27,7 +27,7 @@ public class CustomerView {
     {
         Stage stage;
         Parent root;
-        stage = (Stage) goToTimerScene.getScene().getWindow();
+        stage = (Stage) timerButton.getScene().getWindow();
         try {
             root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("timer.fxml")));
             stage.setScene(new Scene(root, 600, 450));
