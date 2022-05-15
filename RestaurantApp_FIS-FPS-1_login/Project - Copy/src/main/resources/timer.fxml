@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: 0000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Timer.Controller">
    <children>
-      <Button layoutX="221.0" layoutY="175.0" mnemonicParsing="false" />
+      <Button fx:id="stopwatchCook" layoutX="231.0" layoutY="145.0" mnemonicParsing="false" onAction="#stopwatchCook" style="-fx-background-color: FAF0C5;" text="Use the timer as a cook" />
+      <Button fx:id="stopwatchClient" layoutX="219.0" layoutY="228.0" mnemonicParsing="false" onAction="#stopwatchClient" style="-fx-background-color: D58490;" text="See the timer as a customer" />
    </children>
 </AnchorPane>
