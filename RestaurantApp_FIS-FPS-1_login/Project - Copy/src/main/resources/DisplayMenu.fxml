@@ -6,13 +6,13 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuForm.controllers.DisplayMenuController">
    <children>
-      <TableView layoutX="1.0" layoutY="11.0" prefHeight="385.0" prefWidth="593.0" style="-fx-background-color: #D58490;">
+      <TableView fx:id="Table" layoutX="1.0" layoutY="11.0" prefHeight="385.0" prefWidth="593.0" style="-fx-background-color: #D58490;">
         <columns>
-          <TableColumn prefWidth="111.33331298828125" text="Name" />
-          <TableColumn prefWidth="98.00003051757812" text="Ingredients" />
-            <TableColumn prefWidth="124.66665649414062" text="Price" />
-            <TableColumn prefWidth="138.0" text="Time" />
-            <TableColumn prefWidth="121.3333740234375" text="Picture" />
+          <TableColumn fx:id="Name" prefWidth="111.33331298828125" text="Name" />
+          <TableColumn fx:id="Ingredients" prefWidth="98.00003051757812" text="Ingredients" />
+            <TableColumn fx:id="Price" prefWidth="124.66665649414062" text="Price" />
+            <TableColumn fx:id="Time" prefWidth="138.0" text="Time" />
+            <TableColumn fx:id="Picture" prefWidth="121.3333740234375" text="Picture" />
         </columns>
       </TableView>
    </children>

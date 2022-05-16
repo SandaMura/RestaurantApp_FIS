@@ -27,6 +27,7 @@ public class MenuService {
 
     private static ObjectRepository<Food> foodRepository;
 
+
     public static void initDatabase() {
 
 
@@ -41,13 +42,7 @@ public class MenuService {
 
 
     }
-    public List<Food> all(){
-        ArrayList<Food> rezulat=new ArrayList<>();
-        Iterator<Food> it=foodRepository.find().iterator();
-        while (it.hasNext())
-            rezulat.add(it.next());
-        return  rezulat;
-    }
+
 
     public static void addFood(String name, String ingredients, Integer time, String picturePath, Double price) throws foodAlreadyExistsException{
 
