@@ -13,15 +13,12 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Objects;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import javafx.collections.ObservableList;
-import java.util.Iterator;
+
 
 
 
 import static MenuForm.services.FileSystemService.getPathToFile;
+import static org.dizitart.no2.objects.filters.ObjectFilters.eq;
 
 public class MenuService {
 
@@ -47,6 +44,19 @@ public class MenuService {
     public static void addFood(String name, String ingredients, Integer time, String picturePath, Double price) throws foodAlreadyExistsException{
 
         foodRepository.insert(new Food(name, ingredients, time, picturePath, price));
+    }
+    public static void RemoveFood(String name){
+
+        for (Food f : foodRepository.find()){
+            if(name.equals(f.getName()))
+                foodRepository.remove(f);
+            }
+    }
+    public static  void UpdateFoodTime(String name, Integer time){
+        for (Food f : foodRepository.find()){
+            if(name.equals(f.getName()))
+                f.setTime(time);
+        }
     }
 
     private static void checkFoodDoesNotAlreadyExist(String name) throws foodAlreadyExistsException {
