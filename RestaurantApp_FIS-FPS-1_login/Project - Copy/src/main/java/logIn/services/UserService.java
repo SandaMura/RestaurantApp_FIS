@@ -20,7 +20,7 @@ public class UserService {
     public static void initDatabase() {
         Nitrite database = Nitrite.builder()
                 .filePath(getPathToFile("Restaurant-database.db").toFile())
-                .openOrCreate("test", "test");
+                .openOrCreate("src/test", "src/test");
 
             userRepository = database.getRepository(User.class);
 

@@ -11,4 +11,6 @@ public class HelloController {
     protected void onHelloButtonClick() {
         welcomeText.setText("Hello! This is Sanda's & Luyza's project");
     }
+
+
 }

@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="14 may - Log Out and Customer, Cook, Admin pages" />
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="15 mai - basic Timer StopWatch works">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_78.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/com/example/project/TestingCalculation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/firstTest/TestingTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_14_2022_9_04_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_14_2022_9_04_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_14_2022_9_04_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_14_2022_9_04_PM__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/services/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/services/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/com/example/project/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/com/example/project/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/services/UserService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,12 +34,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -42,13 +68,54 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/sanda/OneDrive - Universitatea Politehnica Timisoara/AN 2 2021-2022/sem2/Labs/FIS/tema2/Project - Copy/RestaurantApp_FIS/RestaurantApp_FIS-FPS-1_login/Project - Copy"
+    "last_opened_file_path": "C:/Users/sanda/OneDrive - Universitatea Politehnica Timisoara/AN 2 2021-2022/sem2/Labs/FIS/tema2/Project - Copy/RestaurantApp_FIS/RestaurantApp_FIS-FPS-1_login/Project - Copy",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sanda\OneDrive - Universitatea Politehnica Timisoara\AN 2 2021-2022\sem2\Labs\FIS\tema2\Project - Copy\RestaurantApp_FIS\RestaurantApp_FIS-FPS-1_login\Project - Copy\src\main\java" />
+      <recent name="C:\Users\sanda\OneDrive - Universitatea Politehnica Timisoara\AN 2 2021-2022\sem2\Labs\FIS\tema2\Project - Copy\RestaurantApp_FIS\RestaurantApp_FIS-FPS-1_login\Project - Copy\src\test" />
+      <recent name="C:\Users\sanda\OneDrive - Universitatea Politehnica Timisoara\AN 2 2021-2022\sem2\Labs\FIS\tema2\Project - Copy\RestaurantApp_FIS\RestaurantApp_FIS-FPS-1_login\Project - Copy\src" />
+      <recent name="C:\Users\sanda\OneDrive - Universitatea Politehnica Timisoara\AN 2 2021-2022\sem2\Labs\FIS\tema2\Project - Copy\RestaurantApp_FIS\RestaurantApp_FIS-FPS-1_login\Project - Copy\src\main\test\java" />
+      <recent name="C:\Users\sanda\OneDrive - Universitatea Politehnica Timisoara\AN 2 2021-2022\sem2\Labs\FIS\tema2\Project - Copy\RestaurantApp_FIS\RestaurantApp_FIS-FPS-1_login\Project - Copy\src\main\src-test\java\testsLogIn" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="JUnit" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestingTests.testAddition">
+    <configuration name="TestingTests.testAddition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.firstTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.firstTest" />
+      <option name="MAIN_CLASS_NAME" value="test.java.firstTest.TestingTests" />
+      <option name="METHOD_NAME" value="testAddition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestingTests.testAddition" />
+      <item itemvalue="Maven.Restaurant" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestingTests.testAddition" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
