@@ -61,6 +61,10 @@ public class MenuFormController{
     @FXML
         private Button ShowButton;
     Stage stage;
+    @FXML
+    private Button Button_delete;
+    @FXML
+    private TextField Delete_name;
 
 
     @FXML public void initialize(){
@@ -90,6 +94,12 @@ public class MenuFormController{
             }
         }
 
+    public void DeleteAction(ActionEvent event){
+
+        System.out.println("vreau sa sterg" + Delete_name.getText());
+        MenuService.RemoveFood(food_name.getText());
+
+    }
 
 
     public void AttachAction(ActionEvent actionEvent) {
