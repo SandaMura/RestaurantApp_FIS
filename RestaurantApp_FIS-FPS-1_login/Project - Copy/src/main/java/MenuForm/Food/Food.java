@@ -4,11 +4,10 @@ public class Food {
     @Id
     private String name;
     private String ingredients;
+
     private Integer time;
     private String picture;///retine path-ul pt imagine
-
     private Double price;
-
     public Food(String name, String ingredients, Integer time, String picture, Double price) {
         this.name = name;
         this.ingredients = ingredients;
@@ -16,9 +15,7 @@ public class Food {
         this.picture=picture;
         this.price=price;
     }
-
     public Food(){}
-
     public String getName() {
         return name;
     }
@@ -27,7 +24,8 @@ public class Food {
     }
     public Integer getTime() {return time;}
     public String getPicturePath(){return picture;}
-    public Integer setTime(Integer time){
+
+    public void setTime(Integer time){
         this.time=time;
     }
     public Double getPrice(){return price;}
