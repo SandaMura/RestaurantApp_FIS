@@ -37,6 +37,10 @@ public class MenuFormController{
     @FXML
     private Button Button_attach;
     @FXML
+    private Button Button_delete;
+    @FXML
+    private TextField Delete_name;
+    @FXML
     private Button Button_submit;
     @FXML
     private ScrollPane ScrollingForm1;
@@ -61,10 +65,7 @@ public class MenuFormController{
     @FXML
         private Button ShowButton;
     Stage stage;
-    @FXML
-    private Button Button_delete;
-    @FXML
-    private TextField Delete_name;
+
 
 
     @FXML public void initialize(){
@@ -96,12 +97,16 @@ public class MenuFormController{
 
     public void DeleteAction(ActionEvent event){
 
-        System.out.println("vreau sa sterg" + Delete_name.getText());
+        System.out.println("vreau sa sterg" + food_name.getText());
         MenuService.RemoveFood(food_name.getText());
 
     }
+    public void UpdateTime(ActionEvent event){
 
+        System.out.println("vreau sa modific timpul pentru " + food_name.getText());
+        MenuService.UpdateTime(food_name.getText(),Integer.valueOf(prep_time.getText()));
 
+    }
     public void AttachAction(ActionEvent actionEvent) {
          /* stage = (Stage) ScrollingForm1.getScene().getWindow();
         System.out.println("You successfully logged out");

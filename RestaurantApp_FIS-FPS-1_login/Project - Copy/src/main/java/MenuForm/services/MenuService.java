@@ -50,15 +50,14 @@ public class MenuService {
         for (Food f : foodRepository.find()){
             if(name.equals(f.getName()))
                 foodRepository.remove(f);
-            }
+        }
     }
-    public static  void UpdateFoodTime(String name, Integer time){
+    public static  void UpdateTime(String name, Integer time){
         for (Food f : foodRepository.find()){
             if(name.equals(f.getName()))
                 f.setTime(time);
         }
     }
-
     private static void checkFoodDoesNotAlreadyExist(String name) throws foodAlreadyExistsException {
 
         for (Food food : foodRepository.find()) {
