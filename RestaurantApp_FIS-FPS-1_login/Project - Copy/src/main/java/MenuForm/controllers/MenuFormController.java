@@ -37,10 +37,6 @@ public class MenuFormController{
     @FXML
     private Button Button_attach;
     @FXML
-    private Button Button_delete;
-    @FXML
-    private TextField Delete_name;
-    @FXML
     private Button Button_submit;
     @FXML
     private ScrollPane ScrollingForm1;
