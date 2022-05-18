@@ -2,7 +2,8 @@ package MenuForm.controllers;
 
 
 import App.RestaurantApplication;
-import javafx.event.EventHandler;
+import MenuForm.Food.Food;
+import MenuForm.exceptions.WrongFoodException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -10,25 +11,22 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Control;
-import javafx.stage.Stage;
-import javafx.event.ActionEvent;
 import MenuForm.exceptions.foodAlreadyExistsException;
 import MenuForm.services.MenuService;
 
 import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
-import java.text.BreakIterator;
 import java.util.Objects;
 
+import static MenuForm.services.MenuService.checkDelete;
+import static MenuForm.services.MenuService.foodRepository;
 import static logIn.services.DBUtils.AlertBox;
 
 
@@ -36,6 +34,7 @@ public class MenuFormController{
 
     @FXML
     private Button Button_attach;
+
     @FXML
     private Button Button_submit;
     @FXML
@@ -91,11 +90,16 @@ public class MenuFormController{
             }
         }
 
-    public void DeleteAction(ActionEvent event){
-
-        System.out.println("vreau sa sterg" + food_name.getText());
-        MenuService.RemoveFood(food_name.getText());
-
+    public void DeleteAction(ActionEvent event) throws WrongFoodException {
+        System.out.println("vreau sa sterg " + food_name.getText());
+        try {
+            MenuService.checkDelete(food_name.getText());
+            AlertBox("Dish deleted from database successfully!");
+            // catch (WrongFoodException e) {
+            //   System.out.println(e.getMessage());
+        }catch(WrongFoodException w){
+            System.out.println(w.getMessage());
+        }
     }
     public void UpdateTime(ActionEvent event){
 
