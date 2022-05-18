@@ -2,6 +2,7 @@ package MenuForm.services;
 
 //import logIn.exceptions.UsernameAlreadyExistsException;
 //import logIn.model.User;
+import MenuForm.exceptions.WrongFoodException;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.objects.Cursor;
 import org.dizitart.no2.objects.ObjectRepository;
@@ -22,7 +23,7 @@ import static org.dizitart.no2.objects.filters.ObjectFilters.eq;
 
 public class MenuService {
 
-    private static ObjectRepository<Food> foodRepository;
+    public static ObjectRepository<Food> foodRepository;
 
 
     public static void initDatabase() {
@@ -45,13 +46,20 @@ public class MenuService {
 
         foodRepository.insert(new Food(name, ingredients, time, picturePath, price));
     }
-    public static void RemoveFood(String name){
-
-        for (Food f : foodRepository.find()){
-            if(name.equals(f.getName()))
-                foodRepository.remove(f);
+    public static Food checkDelete(String name) throws WrongFoodException {
+        Food fFound = null;
+        for (Food f : foodRepository.find()) {
+            if (Objects.equals(name, f.getName())) {
+                fFound = f;
+                foodRepository.remove(fFound);
+            }
         }
+        if (fFound == null)
+            throw new WrongFoodException(name);
+        return fFound;
     }
+
+
     public static  void UpdateTime(String name, Integer time){
         for (Food f : foodRepository.find()){
             if(name.equals(f.getName()))
