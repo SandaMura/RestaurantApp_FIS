@@ -99,19 +99,15 @@ public class MenuFormController{
             System.out.println(w.getMessage());
         }
     }
-    public void UpdateTime(ActionEvent event){
+    public void UpdateTime(ActionEvent event) throws WrongFoodException {
 
         System.out.println("vreau sa modific timpul pentru " + food_name.getText());
         try {
             MenuService.UpdateTime(food_name.getText(), Integer.valueOf(prep_time.getText()));
             AlertBox("Time update successfully!");
-        }catch(WrongFoodException wr){
-            System.out.println(wr.getMessage());
-        } catch (foodAlreadyExistsException e) {
-            throw new RuntimeException(e);
+        }catch(WrongFoodException w){
+            System.out.println(w.getMessage());
         }
-
-
     }
     public void AttachAction(ActionEvent actionEvent) {
          /* stage = (Stage) ScrollingForm1.getScene().getWindow();
