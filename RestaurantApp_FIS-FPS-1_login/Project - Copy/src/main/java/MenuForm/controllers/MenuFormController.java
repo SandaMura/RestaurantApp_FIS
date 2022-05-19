@@ -95,8 +95,6 @@ public class MenuFormController{
         try {
             MenuService.checkDelete(food_name.getText());
             AlertBox("Dish deleted from database successfully!");
-            // catch (WrongFoodException e) {
-            //   System.out.println(e.getMessage());
         }catch(WrongFoodException w){
             System.out.println(w.getMessage());
         }
@@ -104,7 +102,15 @@ public class MenuFormController{
     public void UpdateTime(ActionEvent event){
 
         System.out.println("vreau sa modific timpul pentru " + food_name.getText());
-        MenuService.UpdateTime(food_name.getText(),Integer.valueOf(prep_time.getText()));
+        try {
+            MenuService.UpdateTime(food_name.getText(), Integer.valueOf(prep_time.getText()));
+            AlertBox("Time update successfully!");
+        }catch(WrongFoodException wr){
+            System.out.println(wr.getMessage());
+        } catch (foodAlreadyExistsException e) {
+            throw new RuntimeException(e);
+        }
+
 
     }
     public void AttachAction(ActionEvent actionEvent) {

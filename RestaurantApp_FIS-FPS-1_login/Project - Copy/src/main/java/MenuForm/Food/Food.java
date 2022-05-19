@@ -25,8 +25,10 @@ public class Food {
     public Integer getTime() {return time;}
     public String getPicturePath(){return picture;}
 
-    public void setTime(Integer time){
+    public Integer setTime(Integer time){
         this.time=time;
+        return  time;
+
     }
     public Double getPrice(){return price;}
 }
