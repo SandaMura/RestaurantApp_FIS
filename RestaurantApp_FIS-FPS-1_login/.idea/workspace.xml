@@ -4,27 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="17 mai- incerc sa fac un test, am adaugat mai multe dependencies in pom">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_78.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testfx_testfx_core_4_0_16_alpha.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testfx_testfx_junit5_4_0_16_alpha.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/RegistrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/UserServiceTest.java" afterDir="false" />
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="19 mai- am scris testele pentru LogIn, inca sunt probleme la run test">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_13_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dizitart_nitrite_3_4_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dizitart_nitrite_3_4_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_0_M1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_0_M1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_36.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/services/FileSystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/services/FileSystemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/firstTest/TestingTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/firstTest/TestingTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,8 +143,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RegistrationTest.testRegistration" />
-        <item itemvalue="JUnit.TestingTests.testAddition (1)" />
         <item itemvalue="JUnit.TestingTests.testAddition" />
+        <item itemvalue="JUnit.TestingTests.testAddition (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652816283884</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="19 mai- am scris testele pentru LogIn, inca sunt probleme la run test">
+      <created>1652991252490</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652991252490</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +227,7 @@
     <MESSAGE value="14 may - Merge insert in food database" />
     <MESSAGE value="14 may - Log Out and Customer, Cook, Admin pages" />
     <MESSAGE value="17 mai- incerc sa fac un test, am adaugat mai multe dependencies in pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="17 mai- incerc sa fac un test, am adaugat mai multe dependencies in pom" />
+    <MESSAGE value="19 mai- am scris testele pentru LogIn, inca sunt probleme la run test" />
+    <option name="LAST_COMMIT_MESSAGE" value="19 mai- am scris testele pentru LogIn, inca sunt probleme la run test" />
   </component>
 </project>

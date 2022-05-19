@@ -4,6 +4,7 @@ package testsLogIn;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
 import logIn.services.FileSystemService;
 import logIn.services.UserService;
@@ -17,6 +18,7 @@ import org.testfx.api.FxRobot;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
 
+import static org.assertj.core.api.InstanceOfAssertFactories.type;
 import static org.testfx.assertions.api.Assertions.assertThat;
 
 @ExtendWith(ApplicationExtension.class)
@@ -27,7 +29,8 @@ class RegistrationTest {
 
     @BeforeEach
     void setUp() throws Exception {
-        FileSystemService.APPLICATION_FOLDER = ".test-registration-example";
+        FileSystemService.setAppFolder("database-registration-example");
+        FileSystemService.initDirectory();
         FileUtils.cleanDirectory(FileSystemService.getApplicationHomeFolder().toFile());
         UserService.initDatabase();
     }
@@ -42,11 +45,14 @@ class RegistrationTest {
 
     @Test
     void testRegistration(FxRobot robot) {
-        robot.clickOn("#username");
+        robot.clickOn("#usernameField");
         robot.write(USERNAME);
-        robot.clickOn("#password");
+        robot.clickOn("#passwordField");
         robot.write(PASSWORD);
-        robot.clickOn("#registerButton");
+        robot.clickOn("#role");
+      //  type(KeyCode.DOWN);
+        //type(KeyCode.ENTER);
+        robot.clickOn("#handleRegisterAction");
 
         assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Account created successfully!");
         assertThat(UserService.getAllUsers()).size().isEqualTo(1);
@@ -56,12 +62,14 @@ class RegistrationTest {
                 String.format("An account with the username %s already exists!", USERNAME)
         );
 
-        robot.clickOn("#username");
+        robot.clickOn("#usernameField");
         robot.write("1");
-        robot.clickOn("#registerButton");
+        robot.clickOn("#handleRegisterAction");
 
         assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Account created successfully!");
         assertThat(UserService.getAllUsers()).size().isEqualTo(2);
     }
+
+
 }
 
