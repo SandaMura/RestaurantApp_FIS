@@ -60,11 +60,18 @@ public class MenuService {
     }
 
 
-    public static  void UpdateTime(String name, Integer time){
-        for (Food f : foodRepository.find()){
-            if(name.equals(f.getName()))
-                f.setTime(time);
+    public static  Integer UpdateTime(String name, Integer time) throws WrongFoodException,foodAlreadyExistsException {
+        Food fFound = null;
+        for (Food f : foodRepository.find()) {
+            if (Objects.equals(name, f.getName())) {
+              MenuService.checkDelete(name);
+                MenuService.addFood(fFound.getName(), fFound.getIngredients(), fFound.setTime(time), fFound.getPicturePath(), fFound.getPrice());
+
+            }
         }
+        if (fFound == null)
+            throw new WrongFoodException(name);
+        return fFound.getTime();
     }
     private static void checkFoodDoesNotAlreadyExist(String name) throws foodAlreadyExistsException {
 
