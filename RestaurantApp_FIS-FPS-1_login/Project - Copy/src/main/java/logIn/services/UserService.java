@@ -22,7 +22,7 @@ public class UserService {
                 .filePath(getPathToFile("Restaurant-database.db").toFile())
                 .openOrCreate("test", "test");
 
-            userRepository = database.getRepository(User.class);
+        userRepository = database.getRepository(User.class);
 
     }
 

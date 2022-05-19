@@ -31,4 +31,20 @@ public class Food {
 
     }
     public Double getPrice(){return price;}
+
+    public void setName(String name) {
+        this.name=name;
+    }
+
+    public void setIngredients(String ingredients) {
+        this.ingredients=ingredients;
+    }
+
+    public void setPrice(Double price) {
+        this.price=price;
+    }
+
+    public void setPicture(String picturePath) {
+        this.price=price;
+    }
 }
