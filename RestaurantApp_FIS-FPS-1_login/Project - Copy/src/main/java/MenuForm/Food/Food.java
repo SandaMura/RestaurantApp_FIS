@@ -25,11 +25,11 @@ public class Food {
     public Integer getTime() {return time;}
     public String getPicturePath(){return picture;}
 
-    public Integer setTime(Integer time){
-        this.time=time;
-        return  time;
-
+    public Integer setTime(Integer time) {
+        this.time = time;
+        return time;
     }
+
     public Double getPrice(){return price;}
 
     public void setName(String name) {
