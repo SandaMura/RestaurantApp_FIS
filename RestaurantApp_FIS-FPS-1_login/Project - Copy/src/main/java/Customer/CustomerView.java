@@ -16,6 +16,9 @@ public class CustomerView {
 
     @FXML
     private Button goToLogOut;
+    @FXML
+    private Button goReview;
+
 
     @FXML
     private Button goToTimerScene;
@@ -45,6 +48,19 @@ public class CustomerView {
         stage = (Stage) goToLogOut.getScene().getWindow();
         try {
             root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("CustomerLogOut.fxml")));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    void OpenReviewForm(ActionEvent event) {
+        Stage stage;
+        Parent root;
+        stage = (Stage) goReview.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("ReviewN.fxml"));
             stage.setScene(new Scene(root, 600, 450));
             stage.show();
         } catch (IOException e) {

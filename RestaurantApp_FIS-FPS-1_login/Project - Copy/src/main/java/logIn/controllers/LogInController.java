@@ -146,6 +146,8 @@ public class LogInController {
 
     }
 
+
+
     public void registerButton(ActionEvent actionEvent) {
        // AlertBox("The user wants to create a new account");
         Stage stage;
