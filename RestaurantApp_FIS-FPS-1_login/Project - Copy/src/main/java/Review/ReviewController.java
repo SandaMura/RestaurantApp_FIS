@@ -27,7 +27,7 @@ public class ReviewController {
     }
         @FXML
         private TextField check;
-
+    
         @FXML
         private Button list;
         @FXML
