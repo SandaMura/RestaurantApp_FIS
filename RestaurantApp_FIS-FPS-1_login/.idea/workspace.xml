@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="19 mai- am scris testele pentru LogIn, inca sunt probleme la run test">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_11_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_13_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dizitart_nitrite_3_4_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dizitart_nitrite_3_4_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_0_M1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_0_M1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_36.xml" afterDir="false" />
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="19 mai- merge pentru cateva secunde robotetul pentru Register">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/services/FileSystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/services/FileSystemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +72,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RegistrationTest.testRegistration">
+  <component name="RunManager" selected="JUnit.UserServiceTest.testUserIsAddedToDatabase">
     <configuration name="RegistrationTest.testRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
@@ -97,22 +84,6 @@
       <option name="PACKAGE_NAME" value="testsLogIn" />
       <option name="MAIN_CLASS_NAME" value="testsLogIn.RegistrationTest" />
       <option name="METHOD_NAME" value="testRegistration(org.testfx.api.FxRobot)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestingTests.testAddition (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="firstTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="firstTest" />
-      <option name="MAIN_CLASS_NAME" value="firstTest.TestingTests" />
-      <option name="METHOD_NAME" value="testAddition" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,17 +105,69 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest.testDatabaseIsInitializedAndNoUserIsPersisted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsLogIn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsLogIn" />
+      <option name="MAIN_CLASS_NAME" value="testsLogIn.UserServiceTest" />
+      <option name="METHOD_NAME" value="testDatabaseIsInitializedAndNoUserIsPersisted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testUserCanNotBeAddedTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsLogIn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsLogIn" />
+      <option name="MAIN_CLASS_NAME" value="testsLogIn.UserServiceTest" />
+      <option name="METHOD_NAME" value="testUserCanNotBeAddedTwice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testUserIsAddedToDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsLogIn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsLogIn" />
+      <option name="MAIN_CLASS_NAME" value="testsLogIn.UserServiceTest" />
+      <option name="METHOD_NAME" value="testUserIsAddedToDatabase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.RegistrationTest.testRegistration" />
+      <item itemvalue="JUnit.UserServiceTest.testDatabaseIsInitializedAndNoUserIsPersisted" />
+      <item itemvalue="JUnit.UserServiceTest.testUserCanNotBeAddedTwice" />
+      <item itemvalue="JUnit.UserServiceTest.testUserIsAddedToDatabase" />
       <item itemvalue="JUnit.TestingTests.testAddition" />
-      <item itemvalue="JUnit.TestingTests.testAddition (1)" />
       <item itemvalue="Maven.Restaurant" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.testUserIsAddedToDatabase" />
+        <item itemvalue="JUnit.UserServiceTest.testUserCanNotBeAddedTwice" />
+        <item itemvalue="JUnit.UserServiceTest.testDatabaseIsInitializedAndNoUserIsPersisted" />
         <item itemvalue="JUnit.RegistrationTest.testRegistration" />
         <item itemvalue="JUnit.TestingTests.testAddition" />
-        <item itemvalue="JUnit.TestingTests.testAddition (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652991252490</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="19 mai- merge pentru cateva secunde robotetul pentru Register">
+      <created>1652996446903</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652996446903</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,6 +258,7 @@
     <MESSAGE value="14 may - Log Out and Customer, Cook, Admin pages" />
     <MESSAGE value="17 mai- incerc sa fac un test, am adaugat mai multe dependencies in pom" />
     <MESSAGE value="19 mai- am scris testele pentru LogIn, inca sunt probleme la run test" />
-    <option name="LAST_COMMIT_MESSAGE" value="19 mai- am scris testele pentru LogIn, inca sunt probleme la run test" />
+    <MESSAGE value="19 mai- merge pentru cateva secunde robotetul pentru Register" />
+    <option name="LAST_COMMIT_MESSAGE" value="19 mai- merge pentru cateva secunde robotetul pentru Register" />
   </component>
 </project>
