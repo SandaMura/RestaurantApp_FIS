@@ -21,9 +21,9 @@ public class UserService {
     public static void initDatabase() {
         Nitrite database = Nitrite.builder()
                 .filePath(getPathToFile("Restaurant-database.db").toFile())
-                .openOrCreate("src/test", "src/test");
+                .openOrCreate("test", "test");
 
-            userRepository = database.getRepository(User.class);
+        userRepository = database.getRepository(User.class);
 
     }
 
@@ -69,12 +69,5 @@ public class UserService {
     }
 
 
-   /* public static boolean getAllUsers() {
 
-        for (User user : userRepository.find()) {
-            return user;
-        }
-        }
-
-    }*/
 }

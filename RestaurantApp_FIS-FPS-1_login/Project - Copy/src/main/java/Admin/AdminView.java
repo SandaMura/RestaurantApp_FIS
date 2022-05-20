@@ -16,8 +16,7 @@ import logIn.services.DBUtils;
 import logIn.services.UserSearch;
 
 import java.io.IOException;
-
-
+import java.util.Objects;
 
 
 public class AdminView {
@@ -25,6 +24,8 @@ public class AdminView {
 
     @FXML
     private Button OpenFillForm;
+    @FXML
+    private Button goReview;
 
     @FXML
     private Button goToLogOut;
@@ -51,6 +52,23 @@ public class AdminView {
         stage = (Stage) goToLogOut.getScene().getWindow();
         try {
             root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("AdminLogOut.fxml"));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    Stage stage;
+    Parent root;
+
+    @FXML
+    void OpenReviewForm(ActionEvent event) {
+        Stage stage;
+        Parent root;
+        stage = (Stage) goReview.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("Review.fxml")));
             stage.setScene(new Scene(root, 600, 450));
             stage.show();
         } catch (IOException e) {
