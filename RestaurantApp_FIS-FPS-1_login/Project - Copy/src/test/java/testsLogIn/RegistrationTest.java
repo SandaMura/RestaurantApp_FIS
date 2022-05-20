@@ -50,10 +50,12 @@ class RegistrationTest {
         robot.clickOn("#passwordField");
         robot.write(PASSWORD);
         robot.clickOn("#role");
-        robot.clickOn("Customer");
+        robot.clickOn("Admin");
       //  type(KeyCode.DOWN);
         //type(KeyCode.ENTER);
         robot.clickOn("#RegButton");
+
+
 
         assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Account created successfully!");
         assertThat(UserService.getAllUsers()).size().isEqualTo(1);
