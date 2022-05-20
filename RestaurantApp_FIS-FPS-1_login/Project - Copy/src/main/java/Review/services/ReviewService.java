@@ -1,9 +1,13 @@
-package Review;
+package Review.services;
 
 import MenuForm.Food.Food;
 import MenuForm.exceptions.WrongFoodException;
+import Review.Review;
+import Review.UsernameDoesNotExistsException;
 import logIn.exceptions.UsernameAlreadyExistsException;
 import logIn.model.User;
+import org.dizitart.no2.Nitrite;
+import org.dizitart.no2.objects.ObjectRepository;
 
 import java.util.Objects;
 
@@ -21,5 +25,7 @@ public class ReviewService {
             if (exist == 0)
                 throw new UsernameDoesNotExistsException(username);
         }
-    }
+
+
+}
 

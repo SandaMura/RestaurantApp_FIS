@@ -3,7 +3,8 @@ import java.util.Date;
 import java.util.Objects;
 public class Review {
 
-        private String username;
+    public static Object services;
+    private String username;
         private String text;
         private Date date;
 
