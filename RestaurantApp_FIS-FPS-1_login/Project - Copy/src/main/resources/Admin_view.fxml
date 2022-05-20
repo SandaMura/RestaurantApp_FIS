@@ -9,5 +9,6 @@
       <Button layoutX="239.0" layoutY="145.0" mnemonicParsing="false" text="View all menu items" />
       <Button layoutX="251.0" layoutY="212.0" mnemonicParsing="false" text="View all reviews" />
       <Button fx:id="goToLogOut" layoutX="254.0" layoutY="272.0" mnemonicParsing="false" onAction="#goToLogOut" text="Log Out menu" />
+
    </children>
 </AnchorPane>

@@ -36,7 +36,8 @@ public class MenuFormController{
 
     @FXML
     private Button Button_attach;
-
+    @FXML
+    private Button logIn;
     @FXML
     private Button Button_submit;
     @FXML
@@ -121,6 +122,19 @@ public class MenuFormController{
             AlertBox("Dish deleted from database successfully!");
         }catch(WrongFoodException w){
             System.out.println(w.getMessage());
+        }
+    }
+    @FXML
+    void goToLogin(ActionEvent event) {
+        Stage stage;
+        Parent root;
+        stage = (Stage) logIn.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("LogInInterface.fxml"));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
     public void UpdateTime(ActionEvent event) throws WrongFoodException {
