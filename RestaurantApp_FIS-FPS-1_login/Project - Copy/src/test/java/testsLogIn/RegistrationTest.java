@@ -50,21 +50,24 @@ class RegistrationTest {
         robot.clickOn("#passwordField");
         robot.write(PASSWORD);
         robot.clickOn("#role");
+        robot.clickOn("Customer");
       //  type(KeyCode.DOWN);
         //type(KeyCode.ENTER);
-        robot.clickOn("#handleRegisterAction");
+        robot.clickOn("#RegButton");
 
         assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Account created successfully!");
         assertThat(UserService.getAllUsers()).size().isEqualTo(1);
+ ///incearca sa faci un cont cu acelasi nume
 
-        robot.clickOn("#registerButton");
+        robot.clickOn("#RegButton");
         assertThat(robot.lookup("#registrationMessage").queryText()).hasText(
                 String.format("An account with the username %s already exists!", USERNAME)
         );
 
+        ///fa un al doilea cont cu nume diferit
         robot.clickOn("#usernameField");
-        robot.write("1");
-        robot.clickOn("#handleRegisterAction");
+        robot.write("Ana");
+        robot.clickOn("#RegButton");
 
         assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Account created successfully!");
         assertThat(UserService.getAllUsers()).size().isEqualTo(2);

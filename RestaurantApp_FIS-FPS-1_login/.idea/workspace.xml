@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="19 mai- merge pentru cateva secunde robotetul pentru Register">
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="User DataBase Tests work">
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/MenuServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/AdminTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/CookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/CustomerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/database-registration-example/Restaurant-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database-registration-example/Restaurant-database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/firstTest/TestingTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/firstTest/TestingTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +82,39 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.testUserIsAddedToDatabase">
+  <component name="RunManager" selected="JUnit.RegistrationTest.testRegistration">
+    <configuration name="AdminTest.testButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserViewsTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UserViewsTests" />
+      <option name="MAIN_CLASS_NAME" value="UserViewsTests.AdminTest" />
+      <option name="METHOD_NAME" value="testButtons(org.testfx.api.FxRobot)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInTesting.testLogIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsLogIn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsLogIn" />
+      <option name="MAIN_CLASS_NAME" value="testsLogIn.LogInTesting" />
+      <option name="METHOD_NAME" value="testLogIn(org.testfx.api.FxRobot)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegistrationTest.testRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
@@ -84,38 +126,6 @@
       <option name="PACKAGE_NAME" value="testsLogIn" />
       <option name="MAIN_CLASS_NAME" value="testsLogIn.RegistrationTest" />
       <option name="METHOD_NAME" value="testRegistration(org.testfx.api.FxRobot)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestingTests.testAddition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.firstTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.java.firstTest" />
-      <option name="MAIN_CLASS_NAME" value="test.java.firstTest.TestingTests" />
-      <option name="METHOD_NAME" value="testAddition" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.testDatabaseIsInitializedAndNoUserIsPersisted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsLogIn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsLogIn.UserServiceTest" />
-      <option name="METHOD_NAME" value="testDatabaseIsInitializedAndNoUserIsPersisted" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,20 +164,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.AdminTest.testButtons" />
+      <item itemvalue="JUnit.LogInTesting.testLogIn" />
       <item itemvalue="JUnit.RegistrationTest.testRegistration" />
-      <item itemvalue="JUnit.UserServiceTest.testDatabaseIsInitializedAndNoUserIsPersisted" />
       <item itemvalue="JUnit.UserServiceTest.testUserCanNotBeAddedTwice" />
       <item itemvalue="JUnit.UserServiceTest.testUserIsAddedToDatabase" />
-      <item itemvalue="JUnit.TestingTests.testAddition" />
       <item itemvalue="Maven.Restaurant" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegistrationTest.testRegistration" />
+        <item itemvalue="JUnit.LogInTesting.testLogIn" />
         <item itemvalue="JUnit.UserServiceTest.testUserIsAddedToDatabase" />
         <item itemvalue="JUnit.UserServiceTest.testUserCanNotBeAddedTwice" />
-        <item itemvalue="JUnit.UserServiceTest.testDatabaseIsInitializedAndNoUserIsPersisted" />
-        <item itemvalue="JUnit.RegistrationTest.testRegistration" />
-        <item itemvalue="JUnit.TestingTests.testAddition" />
+        <item itemvalue="JUnit.AdminTest.testButtons" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652996446903</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="User DataBase Tests work">
+      <created>1653061632530</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653061632530</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +276,18 @@
     <MESSAGE value="17 mai- incerc sa fac un test, am adaugat mai multe dependencies in pom" />
     <MESSAGE value="19 mai- am scris testele pentru LogIn, inca sunt probleme la run test" />
     <MESSAGE value="19 mai- merge pentru cateva secunde robotetul pentru Register" />
-    <option name="LAST_COMMIT_MESSAGE" value="19 mai- merge pentru cateva secunde robotetul pentru Register" />
+    <MESSAGE value="User DataBase Tests work" />
+    <option name="LAST_COMMIT_MESSAGE" value="User DataBase Tests work" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/RegistrationTest.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -54,6 +54,9 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.testfx.assertions.api.Assertions.assertThat;
+
+
+@ExtendWith(ApplicationExtension.class)
 public class TestingTests{
 
 
