@@ -1,6 +1,7 @@
 package logIn.services;
 
 import org.dizitart.no2.Nitrite;
+import org.dizitart.no2.objects.Cursor;
 import org.dizitart.no2.objects.ObjectRepository;
 import logIn.exceptions.UsernameAlreadyExistsException;
 import logIn.model.User;
@@ -63,6 +64,9 @@ public class UserService {
         return md;
     }
 
+    public static Cursor<User> getAllUsers() {
+        return userRepository.find();
+    }
 
 
 

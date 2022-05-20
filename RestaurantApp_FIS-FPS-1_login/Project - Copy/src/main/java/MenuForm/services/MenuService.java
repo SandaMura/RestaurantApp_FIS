@@ -10,7 +10,6 @@ import org.dizitart.no2.objects.ObjectRepository;
 import MenuForm.Food.Food;
 import MenuForm.exceptions.foodAlreadyExistsException;
 
-import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Objects;
