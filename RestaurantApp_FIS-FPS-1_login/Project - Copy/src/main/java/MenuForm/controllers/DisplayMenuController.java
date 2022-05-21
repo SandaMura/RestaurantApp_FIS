@@ -11,6 +11,7 @@ import org.dizitart.no2.objects.Cursor;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
+import static logIn.services.DBUtils.AlertBox;
 
 
 public class DisplayMenuController {
@@ -49,11 +50,16 @@ public class DisplayMenuController {
         }
         Table.setItems(products);
     }
-    //ObservableList<Food> Order=FXCollections.observableArrayList();
+    ObservableList<Food> Order=FXCollections.observableArrayList();
 
     public void AddOrder(ActionEvent actionEvent) {
         Food food=Table.getSelectionModel().getSelectedItem();
-
+         if(food!=null) {
+             Order.add(food);
+         AlertBox("Dish \"" +food.getName() + "\" added to order");
+         }
+         else
+             AlertBox("Please select a dish");
 
     }
 }
