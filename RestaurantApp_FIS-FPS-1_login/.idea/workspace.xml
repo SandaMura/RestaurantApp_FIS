@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="FxRobot tests for Menu Form: testInsertSuccess &amp; testTimeUpdate">
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="FxRobot tests for Menu Form: test Delete &amp; test Show">
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/TimerTests/StopWatchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/TimerTests/TimerForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/FillingFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/FillingFormTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Timer/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Timer/Time.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="FPS-62" />
+        <entry key="$PROJECT_DIR$/.." value="FPS-64" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -74,8 +76,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FillingFormTest.testShow">
-    <configuration name="FillingFormTest.testIUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StopWatchTest.testStartResetButtons">
+    <configuration name="FillingFormTest.testInsertFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
@@ -85,13 +87,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="FoodTests" />
       <option name="MAIN_CLASS_NAME" value="FoodTests.FillingFormTest" />
-      <option name="METHOD_NAME" value="testIUpdate(org.testfx.api.FxRobot)" />
+      <option name="METHOD_NAME" value="testInsertFail(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FillingFormTest.testShow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MenuServiceTest.testFoodCanNotBeAddedTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
@@ -100,76 +102,76 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="FoodTests" />
-      <option name="MAIN_CLASS_NAME" value="FoodTests.FillingFormTest" />
-      <option name="METHOD_NAME" value="testShow(org.testfx.api.FxRobot)" />
+      <option name="MAIN_CLASS_NAME" value="FoodTests.MenuServiceTest" />
+      <option name="METHOD_NAME" value="testFoodCanNotBeAddedTwice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FillingFormTest.testTDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StopWatchTest.testStartResetButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FoodTests.*" />
+          <option name="PATTERN" value="TimerTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="FoodTests" />
-      <option name="MAIN_CLASS_NAME" value="FoodTests.FillingFormTest" />
-      <option name="METHOD_NAME" value="testTDelete(org.testfx.api.FxRobot)" />
+      <option name="PACKAGE_NAME" value="TimerTests" />
+      <option name="MAIN_CLASS_NAME" value="TimerTests.StopWatchTest" />
+      <option name="METHOD_NAME" value="testStartResetButtons" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FillingFormTest.testTimeUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StopWatchTest.testStartStopButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FoodTests.*" />
+          <option name="PATTERN" value="TimerTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="FoodTests" />
-      <option name="MAIN_CLASS_NAME" value="FoodTests.FillingFormTest" />
-      <option name="METHOD_NAME" value="testTimeUpdate(org.testfx.api.FxRobot)" />
+      <option name="PACKAGE_NAME" value="TimerTests" />
+      <option name="MAIN_CLASS_NAME" value="TimerTests.StopWatchTest" />
+      <option name="METHOD_NAME" value="testStartStopButtons" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogInTesting.testLogInSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TimerForm.testCookTimer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsLogIn.*" />
+          <option name="PATTERN" value="TimerTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testsLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsLogIn.LogInTesting" />
-      <option name="METHOD_NAME" value="testLogInSuccess(org.testfx.api.FxRobot)" />
+      <option name="PACKAGE_NAME" value="TimerTests" />
+      <option name="MAIN_CLASS_NAME" value="TimerTests.TimerForm" />
+      <option name="METHOD_NAME" value="testCookTimer(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FillingFormTest.testIUpdate" />
-      <item itemvalue="JUnit.FillingFormTest.testShow" />
-      <item itemvalue="JUnit.FillingFormTest.testTDelete" />
-      <item itemvalue="JUnit.FillingFormTest.testTimeUpdate" />
-      <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
+      <item itemvalue="JUnit.FillingFormTest.testInsertFail" />
+      <item itemvalue="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice" />
+      <item itemvalue="JUnit.StopWatchTest.testStartResetButtons" />
+      <item itemvalue="JUnit.StopWatchTest.testStartStopButtons" />
+      <item itemvalue="JUnit.TimerForm.testCookTimer" />
       <item itemvalue="Maven.Restaurant" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FillingFormTest.testShow" />
-        <item itemvalue="JUnit.FillingFormTest.testTDelete" />
-        <item itemvalue="JUnit.FillingFormTest.testTimeUpdate" />
-        <item itemvalue="JUnit.FillingFormTest.testIUpdate" />
-        <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
+        <item itemvalue="JUnit.StopWatchTest.testStartResetButtons" />
+        <item itemvalue="JUnit.StopWatchTest.testStartStopButtons" />
+        <item itemvalue="JUnit.TimerForm.testCookTimer" />
+        <item itemvalue="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice" />
+        <item itemvalue="JUnit.FillingFormTest.testInsertFail" />
       </list>
     </recent_temporary>
   </component>
@@ -273,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653143546823</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="FxRobot tests for Menu Form: test Delete &amp; test Show">
+      <created>1653144069986</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1653144069986</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -301,7 +310,8 @@
     <MESSAGE value="21 mai- testFoodIsAddedToDatabase &amp; testFoodCanNotBeAddedTwice&#10;eroare la test in legatura cu inserarea Path-ului in baza de date" />
     <MESSAGE value="testFoodIsAddedToDatabase test success&#10;testFoodCanNotBeAddedTwice test failed" />
     <MESSAGE value="FxRobot tests for Menu Form: testInsertSuccess &amp; testTimeUpdate" />
-    <option name="LAST_COMMIT_MESSAGE" value="FxRobot tests for Menu Form: testInsertSuccess &amp; testTimeUpdate" />
+    <MESSAGE value="FxRobot tests for Menu Form: test Delete &amp; test Show" />
+    <option name="LAST_COMMIT_MESSAGE" value="FxRobot tests for Menu Form: test Delete &amp; test Show" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -310,6 +320,11 @@
           <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/RegistrationTest.java</url>
           <line>55</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/TimerTests/TimerForm.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java</url>
