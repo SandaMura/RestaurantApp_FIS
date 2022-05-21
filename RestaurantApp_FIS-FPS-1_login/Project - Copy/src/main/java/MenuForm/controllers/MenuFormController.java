@@ -187,6 +187,7 @@ public class MenuFormController{
 
         ObservableList<Food> products = FXCollections.observableArrayList();
         Cursor<Food> foodList = MenuService.getAllFood();
+
         for(Food f : foodList){
             products.add(f);
         }
