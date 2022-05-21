@@ -7,5 +7,7 @@
    <children>
       <Button fx:id="stopwatchCook" layoutX="231.0" layoutY="145.0" mnemonicParsing="false" onAction="#stopwatchCook" style="-fx-background-color: FAF0C5;" text="Use the timer as a cook" />
       <Button fx:id="stopwatchClient" layoutX="219.0" layoutY="228.0" mnemonicParsing="false" onAction="#stopwatchClient" style="-fx-background-color: D58490;" text="See the timer as a customer" />
+      <Button fx:id="backToCook" layoutX="32.0" layoutY="145.0" mnemonicParsing="false" onAction="#backToCook" text="Back to Cook Menu" />
+      <Button fx:id="backToCustomer" layoutX="32.0" layoutY="228.0" mnemonicParsing="false" onAction="#backToCustomer" text="Back to Customer Menu" />
    </children>
 </AnchorPane>

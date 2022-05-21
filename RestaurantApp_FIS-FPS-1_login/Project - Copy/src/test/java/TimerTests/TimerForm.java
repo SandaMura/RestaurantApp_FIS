@@ -1,5 +1,7 @@
 package TimerTests;
 
+import Timer.Time;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -19,12 +21,20 @@ import org.testfx.api.FxRobot;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
 
+import javafx.scene.*;
+import javafx.scene.control.Button;
+
+import java.awt.*;
+
 import static org.assertj.core.api.InstanceOfAssertFactories.type;
 import static org.testfx.assertions.api.Assertions.assertThat;
 
 
 @ExtendWith(ApplicationExtension.class)
 public class TimerForm {
+
+    @FXML
+    private Button backToCustomer;
 
     @BeforeAll
     static void beforeAll() {
@@ -48,7 +58,32 @@ public class TimerForm {
     void testCookTimer(FxRobot robot){
 
         robot.clickOn("#stopwatchCook");
-        robot.clickOn("Start");
+        Time stopwatch=new Time();
+        stopwatch.start();
+       // robot.clickOn("Start");
+
+        robot.clickOn("#backToCook");
+
+        assertThat("Cook.fxml").isNotNull();
+
 
     }
+
+   @Test
+   void testCustomerTimer(FxRobot robot){
+       robot.clickOn("#stopwatchCook");
+       Time stopwatch=new Time();
+       stopwatch.start();
+
+        robot.clickOn("#stopwatchClient");
+        robot.clickOn(("OK"));
+        //robot.clickOn("Start");
+
+       robot.clickOn("#backToCustomer");
+
+
+       assertThat("Customer.fxml").isNotNull();
+
+    }
+
 }
