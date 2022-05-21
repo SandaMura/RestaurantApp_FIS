@@ -41,6 +41,7 @@
             </TableView>
             <Button fx:id="show" layoutX="554.0" layoutY="321.0" mnemonicParsing="false" onAction="#ViewAdmin" text="Show forms" />
             <Button fx:id="logIn" layoutX="285.0" layoutY="346.0" mnemonicParsing="false" onAction="#goToLogin" text="Log in" />
+            <Button fx:id="BackToAdmin" layoutX="11.0" layoutY="372.0" mnemonicParsing="false" onAction="#backToAdmin" text="Back to admin menu" />
          </children></AnchorPane>
   </content>
 </ScrollPane>

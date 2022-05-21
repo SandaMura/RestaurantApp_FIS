@@ -131,7 +131,7 @@ public class logOutController{
 
         Stage stage;
         Parent root;
-        stage = (Stage) CookLogOut.getScene().getWindow();
+        stage = (Stage) CustomerLogOut.getScene().getWindow();
         try {
             root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("Customer_view.fxml")));
             stage.setScene(new Scene(root, 600, 450));

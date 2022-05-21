@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="Test start, stop, reset methods for the StopWatch">
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="Test Buttons from COOK Menu with FXRobots">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Timer/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Timer/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/timer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/timer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/TimerTests/TimerForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/TimerTests/TimerForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Cook/CookView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Cook/CookView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Customer/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Customer/CustomerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logOut/logOutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logOut/logOutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/Customer_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/Customer_view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/CustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/CustomerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="FPS-64" />
+        <entry key="$PROJECT_DIR$/.." value="FPS-65" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -75,50 +77,66 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TimerForm.testCookTimer">
-    <configuration name="MenuServiceTest.testFoodCanNotBeAddedTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CustomerTest.testButtons">
+    <configuration name="AdminTest.testButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FoodTests.*" />
+          <option name="PATTERN" value="UserViewsTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="FoodTests" />
-      <option name="MAIN_CLASS_NAME" value="FoodTests.MenuServiceTest" />
-      <option name="METHOD_NAME" value="testFoodCanNotBeAddedTwice" />
+      <option name="PACKAGE_NAME" value="UserViewsTests" />
+      <option name="MAIN_CLASS_NAME" value="UserViewsTests.AdminTest" />
+      <option name="METHOD_NAME" value="testButtons(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StopWatchTest.testStartResetButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CookTest.testButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TimerTests.*" />
+          <option name="PATTERN" value="UserViewsTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TimerTests" />
-      <option name="MAIN_CLASS_NAME" value="TimerTests.StopWatchTest" />
-      <option name="METHOD_NAME" value="testStartResetButtons" />
+      <option name="PACKAGE_NAME" value="UserViewsTests" />
+      <option name="MAIN_CLASS_NAME" value="UserViewsTests.CookTest" />
+      <option name="METHOD_NAME" value="testButtons(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StopWatchTest.testStartStopButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerTest.testButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TimerTests.*" />
+          <option name="PATTERN" value="UserViewsTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TimerTests" />
-      <option name="MAIN_CLASS_NAME" value="TimerTests.StopWatchTest" />
-      <option name="METHOD_NAME" value="testStartStopButtons" />
+      <option name="PACKAGE_NAME" value="UserViewsTests" />
+      <option name="MAIN_CLASS_NAME" value="UserViewsTests.CustomerTest" />
+      <option name="METHOD_NAME" value="testButtons(org.testfx.api.FxRobot)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInTesting.testLogInSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsLogIn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsLogIn" />
+      <option name="MAIN_CLASS_NAME" value="testsLogIn.LogInTesting" />
+      <option name="METHOD_NAME" value="testLogInSuccess(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,37 +158,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TimerForm.testCustomerTimer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TimerTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TimerTests" />
-      <option name="MAIN_CLASS_NAME" value="TimerTests.TimerForm" />
-      <option name="METHOD_NAME" value="testCustomerTimer(org.testfx.api.FxRobot)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice" />
-      <item itemvalue="JUnit.StopWatchTest.testStartResetButtons" />
-      <item itemvalue="JUnit.StopWatchTest.testStartStopButtons" />
+      <item itemvalue="JUnit.AdminTest.testButtons" />
+      <item itemvalue="JUnit.CookTest.testButtons" />
+      <item itemvalue="JUnit.CustomerTest.testButtons" />
       <item itemvalue="JUnit.TimerForm.testCookTimer" />
-      <item itemvalue="JUnit.TimerForm.testCustomerTimer" />
+      <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
       <item itemvalue="Maven.Restaurant" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerTest.testButtons" />
+        <item itemvalue="JUnit.CookTest.testButtons" />
+        <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
+        <item itemvalue="JUnit.AdminTest.testButtons" />
         <item itemvalue="JUnit.TimerForm.testCookTimer" />
-        <item itemvalue="JUnit.TimerForm.testCustomerTimer" />
-        <item itemvalue="JUnit.StopWatchTest.testStartResetButtons" />
-        <item itemvalue="JUnit.StopWatchTest.testStartStopButtons" />
-        <item itemvalue="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +290,28 @@
       <option name="project" value="LOCAL" />
       <updated>1653147923049</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Use FXRobot to test the Timer Interface">
+      <created>1653149749286</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1653149749286</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Test Buttons from Admin Menu with FXRobots">
+      <created>1653156769938</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1653156769938</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Test Buttons from COOK Menu with FXRobots">
+      <created>1653162008978</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1653162008978</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -318,7 +341,10 @@
     <MESSAGE value="FxRobot tests for Menu Form: testInsertSuccess &amp; testTimeUpdate" />
     <MESSAGE value="FxRobot tests for Menu Form: test Delete &amp; test Show" />
     <MESSAGE value="Test start, stop, reset methods for the StopWatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test start, stop, reset methods for the StopWatch" />
+    <MESSAGE value="Use FXRobot to test the Timer Interface" />
+    <MESSAGE value="Test Buttons from Admin Menu with FXRobots" />
+    <MESSAGE value="Test Buttons from COOK Menu with FXRobots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Buttons from COOK Menu with FXRobots" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -332,6 +358,11 @@
           <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/TimerTests/TimerForm.java</url>
           <line>56</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/AdminTest.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java</url>
@@ -395,6 +426,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/CustomerTest.java</url>
+          <line>49</line>
+          <properties class="UserViewsTests.CustomerTest" method="testButtons">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

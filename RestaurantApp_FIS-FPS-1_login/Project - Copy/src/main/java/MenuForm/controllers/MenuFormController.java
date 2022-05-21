@@ -59,7 +59,7 @@ public class MenuFormController{
             private ImageView Picture;
 
     @FXML
-            private Button Back;
+            private Button BackToAdmin;
     @FXML
     private Button show;
     @FXML
@@ -169,7 +169,7 @@ public class MenuFormController{
 
         Stage stage;
         Parent root;
-        stage = (Stage) Back.getScene().getWindow();
+        stage = (Stage) BackToAdmin.getScene().getWindow();
         try {
             root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("Admin_view.fxml")));
             stage.setScene(new Scene(root, 600, 450));
@@ -194,6 +194,20 @@ public class MenuFormController{
     }
     public void ViewAdmin() {
         initialize2();
+    }
+
+    public void backToAdmin(ActionEvent actionEvent) {
+        Stage stage;
+        Parent root;
+        stage = (Stage) BackToAdmin.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("Admin_view.fxml")));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
 
