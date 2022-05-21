@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="testLogIn works with FxRobot. 1.test LogIn failed with wrong CUI; 2. test create new account and login successfully">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_15_2022_11_39_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_15_2022_11_39_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="21 mai- testFoodIsAddedToDatabase &amp; testFoodCanNotBeAddedTwice&#10;eroare la test in legatura cu inserarea Path-ului in baza de date">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/database-registration-example/Restaurant-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database-registration-example/Restaurant-database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Restaurant-database.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Restaurant-database.db.back" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/Food/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/Food/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/services/FileSystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/services/FileSystemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/MenuServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/MenuServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,23 +75,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MenuServiceTest.testFoodIsAddedToDatabase">
-    <configuration name="LogInTesting.testLogInSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsLogIn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsLogIn.LogInTesting" />
-      <option name="METHOD_NAME" value="testLogInSuccess(org.testfx.api.FxRobot)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice">
     <configuration name="MenuServiceTest.testFoodCanNotBeAddedTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
@@ -145,6 +124,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest.testUserCanNotBeAddedTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsLogIn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsLogIn" />
+      <option name="MAIN_CLASS_NAME" value="testsLogIn.UserServiceTest" />
+      <option name="METHOD_NAME" value="testUserCanNotBeAddedTwice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceTest.testUserIsAddedToDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
@@ -164,18 +159,18 @@
     <list>
       <item itemvalue="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice" />
       <item itemvalue="JUnit.MenuServiceTest.testFoodIsAddedToDatabase" />
+      <item itemvalue="JUnit.UserServiceTest.testUserCanNotBeAddedTwice" />
       <item itemvalue="JUnit.UserServiceTest.testUserIsAddedToDatabase" />
-      <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
       <item itemvalue="JUnit.RegistrationTest.testRegistration" />
       <item itemvalue="Maven.Restaurant" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MenuServiceTest.testFoodIsAddedToDatabase" />
         <item itemvalue="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice" />
+        <item itemvalue="JUnit.UserServiceTest.testUserCanNotBeAddedTwice" />
+        <item itemvalue="JUnit.MenuServiceTest.testFoodIsAddedToDatabase" />
         <item itemvalue="JUnit.UserServiceTest.testUserIsAddedToDatabase" />
         <item itemvalue="JUnit.RegistrationTest.testRegistration" />
-        <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653073785814</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="21 mai- testFoodIsAddedToDatabase &amp; testFoodCanNotBeAddedTwice&#10;eroare la test in legatura cu inserarea Path-ului in baza de date">
+      <created>1653139777686</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1653139777686</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +285,8 @@
     <MESSAGE value="19 mai- merge pentru cateva secunde robotetul pentru Register" />
     <MESSAGE value="User DataBase Tests work" />
     <MESSAGE value="testRegistration works with RobotFx. Un caz de succes, un caz de failure, un caz de succes" />
-    <option name="LAST_COMMIT_MESSAGE" value="testRegistration works with RobotFx. Un caz de succes, un caz de failure, un caz de succes" />
+    <MESSAGE value="21 mai- testFoodIsAddedToDatabase &amp; testFoodCanNotBeAddedTwice&#10;eroare la test in legatura cu inserarea Path-ului in baza de date" />
+    <option name="LAST_COMMIT_MESSAGE" value="21 mai- testFoodIsAddedToDatabase &amp; testFoodCanNotBeAddedTwice&#10;eroare la test in legatura cu inserarea Path-ului in baza de date" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

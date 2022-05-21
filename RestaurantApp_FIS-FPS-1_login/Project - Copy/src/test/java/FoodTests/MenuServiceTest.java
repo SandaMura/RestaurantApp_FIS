@@ -66,8 +66,8 @@ public class MenuServiceTest {
     @DisplayName("FOOD can not be added twice")
     void testFoodCanNotBeAddedTwice() {
         assertThrows(foodAlreadyExistsException.class, () -> {
-            MenuService.addFood(NAME, INGREDIENTS, TIME, PATH, PRICE );
-            MenuService.addFood(NAME, INGREDIENTS, TIME, PATH, PRICE );
+            MenuService.addFood(NAME+1, INGREDIENTS, TIME, PATH, PRICE );
+            MenuService.addFood(NAME+1, INGREDIENTS, TIME, PATH, PRICE );
         });
     }
 
