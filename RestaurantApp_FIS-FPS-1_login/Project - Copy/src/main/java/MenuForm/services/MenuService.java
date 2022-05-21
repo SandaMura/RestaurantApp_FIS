@@ -33,18 +33,20 @@ public class MenuService {
                 .filePath(MenuForm.services.FileSystemService.getPathToFile("Food-database.db").toFile())
                 .openOrCreate("test", "test");
 
-
-
         foodRepository = database2.getRepository(Food.class);
-
-
-
     }
 
 
     public static void addFood(String name, String ingredients, Integer time, String picturePath, Double price) throws foodAlreadyExistsException{
-
-        foodRepository.insert(new Food(name, ingredients, time, picturePath, price));
+        int ok=0;
+        for (Food f : foodRepository.find()) {
+            if(f.getName().equals(name))
+                ok = 1;
+            }
+                if(ok==0)
+                  foodRepository.insert(new Food(name, ingredients, time, picturePath, price));
+                else
+                    throw new foodAlreadyExistsException(name);
     }
     public static Food checkDelete(String name) throws WrongFoodException {
         Food fFound = null;

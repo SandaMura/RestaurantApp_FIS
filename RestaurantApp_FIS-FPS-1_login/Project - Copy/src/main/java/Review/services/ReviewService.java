@@ -2,12 +2,12 @@ package Review.services;
 
 
 import Review.Review;
-import Review.UsernameDoesNotExistsException;
+import Review.exception.UsernameDoesNotExistsException;
 import logIn.model.User;
 import org.dizitart.no2.Nitrite;
+import org.dizitart.no2.objects.Cursor;
 import org.dizitart.no2.objects.ObjectRepository;
 
-import java.util.Date;
 import java.util.Objects;
 
 import static Review.services.FileSystemService.getPathToFile;
@@ -35,6 +35,9 @@ public class ReviewService {
             if (exist == 0)
                 throw new UsernameDoesNotExistsException(username);
         }
+    public static Cursor<Review> getAllReview(){
+        return reviewRepository.find();
+    }
 
 
 }
