@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #56739A;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #56739A;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminView">
    <children>
       <Button fx:id="OpenFillForm" layoutX="238.0" layoutY="85.0" mnemonicParsing="false" onAction="#OpenForm" text="Add new menu item" />
       <Button layoutX="239.0" layoutY="145.0" mnemonicParsing="false" text="View all menu items" />
-      <Button layoutX="251.0" layoutY="212.0" mnemonicParsing="false" text="View all reviews" />
+      <Button fx:id="view" layoutX="251.0" layoutY="212.0" mnemonicParsing="false" onAction="#ViewReview" text="View all reviews" />
       <Button fx:id="goToLogOut" layoutX="254.0" layoutY="272.0" mnemonicParsing="false" onAction="#goToLogOut" text="Log Out menu" />
 
    </children>

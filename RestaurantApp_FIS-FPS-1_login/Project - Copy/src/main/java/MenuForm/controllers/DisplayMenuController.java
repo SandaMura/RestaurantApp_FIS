@@ -4,11 +4,14 @@ import MenuForm.Food.Food;
 import MenuForm.services.MenuService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.dizitart.no2.objects.Cursor;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+
+
 
 public class DisplayMenuController {
 
@@ -45,5 +48,12 @@ public class DisplayMenuController {
             products.add(f);
         }
         Table.setItems(products);
+    }
+    //ObservableList<Food> Order=FXCollections.observableArrayList();
+
+    public void AddOrder(ActionEvent actionEvent) {
+        Food food=Table.getSelectionModel().getSelectedItem();
+
+
     }
 }

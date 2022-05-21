@@ -75,4 +75,26 @@ public class AdminView {
             e.printStackTrace();
         }
     }
+
+    @FXML
+    private Button view;
+
+
+
+    @FXML
+    void ViewReview(ActionEvent event){
+        Stage stage;
+        Parent root;
+        stage = (Stage) view.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("DisplayReview.fxml"));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
 }

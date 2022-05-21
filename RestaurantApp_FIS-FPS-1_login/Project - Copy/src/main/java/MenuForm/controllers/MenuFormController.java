@@ -98,7 +98,7 @@ public class MenuFormController{
         stage = (Stage) ShowButton.getScene().getWindow();
         try {
             root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("DisplayMenu.fxml"));
-            stage.setScene(new Scene(root, 600, 450));
+            stage.setScene(new Scene(root, 759, 400));
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
@@ -192,7 +192,9 @@ public class MenuFormController{
         }
         table.setItems(products);
     }
-    public void ViewAdmin() {
-        initialize2();
-    }
+        public void ViewAdmin() {
+            initialize2();
+        }
+
+
 }

@@ -1,9 +1,11 @@
 package MenuForm.Food;
+import javafx.scene.control.CheckBox;
 import org.dizitart.no2.objects.Id;
 public class Food {
     @Id
     private String name;
     private String ingredients;
+
 
     private Integer time;
     private String picture;///retine path-ul pt imagine
@@ -14,7 +16,9 @@ public class Food {
         this.time = time;
         this.picture=picture;
         this.price=price;
+
     }
+
     public Food(){}
     public String getName() {
         return name;

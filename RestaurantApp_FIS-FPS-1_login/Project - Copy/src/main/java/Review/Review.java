@@ -25,11 +25,6 @@ public class Review {
         public String getText() {
             return text;
         }
-
-        public Date getDate() {
-            return date;
-        }
-
         public void setUsername(String username) {
             this.username = username;
         }
@@ -38,9 +33,7 @@ public class Review {
             this.text = text;
         }
 
-        public void setDate(Date date) {
-            this.date = date;
-        }
+
 
         }
 
