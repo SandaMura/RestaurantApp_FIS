@@ -19,7 +19,7 @@ public class CookView {
     private Button goToLogOut;
 
     @FXML
-    private Button stopwatch;
+    private Button timerButton;
     public void goToLogOutScene(ActionEvent actionEvent) {
 
         Stage stage;
@@ -39,7 +39,7 @@ public class CookView {
 
         Stage stage;
         Parent root;
-        stage = (Stage) stopwatch.getScene().getWindow();
+        stage = (Stage) timerButton.getScene().getWindow();
         try {
             root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("timer.fxml")));
             stage.setScene(new Scene(root, 600, 450));
