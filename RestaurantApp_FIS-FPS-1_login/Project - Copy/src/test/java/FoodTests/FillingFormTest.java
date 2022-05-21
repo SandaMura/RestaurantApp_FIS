@@ -56,7 +56,7 @@ public class FillingFormTest {
     void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("FormInterface.fxml"));
         primaryStage.setTitle("Add new food Example");
-        primaryStage.setScene(new Scene(root, 600, 400));
+        primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.show();
     }
 
@@ -135,6 +135,61 @@ public class FillingFormTest {
         robot.clickOn("#prep_time");
         robot.write(String.valueOf(20));
         robot.clickOn("#UpdatefoodTime");
+
+    }
+    @Test
+    void testDelete(FxRobot robot) {
+        robot.clickOn("#food_name");
+        robot.write(NAME);
+        robot.clickOn("#food_ingredients");
+        robot.write(INGREDIENTS);
+        robot.clickOn("#prep_time");
+        robot.write(String.valueOf(TIME));
+
+        robot.clickOn("#price");
+        robot.write(String.valueOf(PRICE));
+
+        // robot.clickOn("#Button_attach");
+        robot.clickOn("#txt_filename");
+        robot.write(PATH);
+
+
+
+        robot.clickOn("#Button_submit");
+
+        robot.clickOn(("OK"));
+
+        ///update timpul de prep
+
+        robot.clickOn("#Button_delete");
+
+    }
+
+    @Test
+    void testShow(FxRobot robot) {
+        robot.clickOn("#food_name");
+        robot.write(NAME);
+        robot.clickOn("#food_ingredients");
+        robot.write(INGREDIENTS);
+        robot.clickOn("#prep_time");
+        robot.write(String.valueOf(TIME));
+
+        robot.clickOn("#price");
+        robot.write(String.valueOf(PRICE));
+
+        // robot.clickOn("#Button_attach");
+        robot.clickOn("#txt_filename");
+        robot.write(PATH);
+
+
+
+        robot.clickOn("#Button_submit");
+
+        robot.clickOn(("OK"));
+
+        ///update timpul de prep
+
+        robot.clickOn("#ShowButton");
 
     }
 
