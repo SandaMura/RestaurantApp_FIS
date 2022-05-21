@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="testRegistration works with RobotFx. Un caz de succes, un caz de failure, un caz de succes">
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="testLogIn works with FxRobot. 1.test LogIn failed with wrong CUI; 2. test create new account and login successfully">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_15_2022_11_39_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_15_2022_11_39_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/database-registration-example/Restaurant-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database-registration-example/Restaurant-database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/controllers/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logIn/controllers/LogInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/LogInInterface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/LogInInterface.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Restaurant-database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Restaurant-database.db.back" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/Food/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/Food/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/services/FileSystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/services/FileSystemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/MenuServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/MenuServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="main" />
+        <entry key="$PROJECT_DIR$/.." value="FPS-62" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -49,18 +52,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/sanda/OneDrive - Universitatea Politehnica Timisoara/AN 2 2021-2022/sem2/Labs/FIS/tema2/Project - Copy/RestaurantApp_FIS/RestaurantApp_FIS-FPS-1_login/Project - Copy",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sanda/OneDrive - Universitatea Politehnica Timisoara/AN 2 2021-2022/sem2/Labs/FIS/tema2/Project - Copy/RestaurantApp_FIS/RestaurantApp_FIS-FPS-1_login/Project - Copy&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sanda\OneDrive - Universitatea Politehnica Timisoara\AN 2 2021-2022\sem2\Labs\FIS\tema2\Project - Copy\RestaurantApp_FIS\RestaurantApp_FIS-FPS-1_login\Project - Copy\src\main\java" />
@@ -77,55 +80,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LogInTesting.testLogInFailedWrongCUI">
-    <configuration name="LogInTesting.testLogInExit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsLogIn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsLogIn.LogInTesting" />
-      <option name="METHOD_NAME" value="testLogInExit(org.testfx.api.FxRobot)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogInTesting.testLogInFailedWrongCUI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsLogIn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsLogIn.LogInTesting" />
-      <option name="METHOD_NAME" value="testLogInFailedWrongCUI(org.testfx.api.FxRobot)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogInTesting.testLogInFailedWrongUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsLogIn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsLogIn.LogInTesting" />
-      <option name="METHOD_NAME" value="testLogInFailedWrongUsername(org.testfx.api.FxRobot)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MenuServiceTest.testFoodIsAddedToDatabase">
     <configuration name="LogInTesting.testLogInSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
@@ -137,6 +92,38 @@
       <option name="PACKAGE_NAME" value="testsLogIn" />
       <option name="MAIN_CLASS_NAME" value="testsLogIn.LogInTesting" />
       <option name="METHOD_NAME" value="testLogInSuccess(org.testfx.api.FxRobot)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuServiceTest.testFoodCanNotBeAddedTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FoodTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="FoodTests" />
+      <option name="MAIN_CLASS_NAME" value="FoodTests.MenuServiceTest" />
+      <option name="METHOD_NAME" value="testFoodCanNotBeAddedTwice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuServiceTest.testFoodIsAddedToDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FoodTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="FoodTests" />
+      <option name="MAIN_CLASS_NAME" value="FoodTests.MenuServiceTest" />
+      <option name="METHOD_NAME" value="testFoodIsAddedToDatabase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,21 +145,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest.testUserIsAddedToDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsLogIn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsLogIn" />
+      <option name="MAIN_CLASS_NAME" value="testsLogIn.UserServiceTest" />
+      <option name="METHOD_NAME" value="testUserIsAddedToDatabase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.LogInTesting.testLogInExit" />
-      <item itemvalue="JUnit.LogInTesting.testLogInFailedWrongCUI" />
-      <item itemvalue="JUnit.LogInTesting.testLogInFailedWrongUsername" />
+      <item itemvalue="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice" />
+      <item itemvalue="JUnit.MenuServiceTest.testFoodIsAddedToDatabase" />
+      <item itemvalue="JUnit.UserServiceTest.testUserIsAddedToDatabase" />
       <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
       <item itemvalue="JUnit.RegistrationTest.testRegistration" />
       <item itemvalue="Maven.Restaurant" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LogInTesting.testLogInFailedWrongCUI" />
-        <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
-        <item itemvalue="JUnit.LogInTesting.testLogInFailedWrongUsername" />
-        <item itemvalue="JUnit.LogInTesting.testLogInExit" />
+        <item itemvalue="JUnit.MenuServiceTest.testFoodIsAddedToDatabase" />
+        <item itemvalue="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice" />
+        <item itemvalue="JUnit.UserServiceTest.testUserIsAddedToDatabase" />
         <item itemvalue="JUnit.RegistrationTest.testRegistration" />
+        <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +296,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java</url>
           <line>122</line>
-          <properties class="testsLogIn.LogInTesting" method="testLogInExit">
+          <properties class="testsLogIn.LogInTesting">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -302,11 +305,20 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java</url>
           <line>61</line>
-          <properties class="testsLogIn.LogInTesting" method="testLogInFailedWrongCUI">
+          <properties class="testsLogIn.LogInTesting">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/MenuServiceTest.java</url>
+          <line>66</line>
+          <properties class="FoodTests.MenuServiceTest" method="testFoodCanNotBeAddedTwice">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
