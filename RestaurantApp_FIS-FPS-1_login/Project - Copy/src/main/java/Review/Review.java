@@ -8,10 +8,10 @@ public class Review {
         private String text;
         private Date date;
 
-        public Review(String username, String text, Date date) {
+        public Review(String username, String text) {
             this.username = username;
             this.text = text;
-            this.date = date;
+
         }
 
         public Review(){

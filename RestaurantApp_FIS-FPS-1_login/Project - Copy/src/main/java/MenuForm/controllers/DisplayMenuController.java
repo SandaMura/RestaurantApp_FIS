@@ -29,11 +29,11 @@ public class DisplayMenuController {
 
     @FXML
     private TableColumn<Food, Integer> Time;
-    
+
 
     @FXML public void initialize(){
         Name.setCellValueFactory(new PropertyValueFactory<Food, String>("name"));
-        Picture.setCellValueFactory(new PropertyValueFactory<Food, String>("picture"));
+        Picture.setCellValueFactory(new PropertyValueFactory<Food, String>("PicturePath"));
         Ingredients.setCellValueFactory(new PropertyValueFactory<Food, String>("ingredients"));
         Time.setCellValueFactory(new PropertyValueFactory<Food, Integer>("time"));
         Price.setCellValueFactory(new PropertyValueFactory<Food, Double>("price"));

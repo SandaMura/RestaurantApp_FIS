@@ -43,27 +43,27 @@ public class MenuFormController{
     @FXML
     private ScrollPane ScrollingForm1;
     @FXML
-            private TextField txt_filename;
+    private TextField txt_filename;
     @FXML
-            private TextField food_name;
+    private TextField food_name;
     @FXML
-            private TextField food_ingredients;
+    private TextField food_ingredients;
     @FXML
-            private TextField prep_time;
+    private TextField prep_time;
 
     @FXML
-           private TextField price;
+    private TextField price;
 
 
     @FXML
-            private ImageView Picture;
+    private ImageView Picture;
 
     @FXML
-            private Button Back;
+    private Button Back;
     @FXML
     private Button show;
     @FXML
-        private Button ShowButton;
+    private Button ShowButton;
     Stage stage;
     @FXML
     private TableColumn<Food, String> ingredients;
@@ -106,14 +106,14 @@ public class MenuFormController{
     }
     public void SubmitAction(ActionEvent event){
 
-            System.out.println("vreau sa inserez" + food_name.getText());
-            try {
-                MenuService.addFood(food_name.getText(), food_ingredients.getText(), Integer.parseInt(prep_time.getText()), txt_filename.getText(), Double.parseDouble(price.getText()));
-                AlertBox("Dish created and added to the database successfully!");
-            } catch (foodAlreadyExistsException e) {
-                System.out.println(e.getMessage());
-            }
+        System.out.println("vreau sa inserez" + food_name.getText());
+        try {
+            MenuService.addFood(food_name.getText(), food_ingredients.getText(), Integer.parseInt(prep_time.getText()), txt_filename.getText(), Double.parseDouble(price.getText()));
+            AlertBox("Dish created and added to the database successfully!");
+        } catch (foodAlreadyExistsException e) {
+            System.out.println(e.getMessage());
         }
+    }
 
     public void DeleteAction(ActionEvent event) throws WrongFoodException {
         System.out.println("vreau sa sterg " + food_name.getText());
@@ -180,7 +180,7 @@ public class MenuFormController{
     }
     public void initialize2(){
         name.setCellValueFactory(new PropertyValueFactory<Food, String>("name"));
-        picture.setCellValueFactory(new PropertyValueFactory<Food, String>("picture"));
+        picture.setCellValueFactory(new PropertyValueFactory<Food, String>("PicturePath"));
         ingredients.setCellValueFactory(new PropertyValueFactory<Food, String>("ingredients"));
         time.setCellValueFactory(new PropertyValueFactory<Food, Integer>("time"));
         pricee.setCellValueFactory(new PropertyValueFactory<Food, Double>("price"));
@@ -196,4 +196,3 @@ public class MenuFormController{
         initialize2();
     }
 }
-

@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -11,7 +10,6 @@
    <children>
       <Button fx:id="list" layoutX="127.0" layoutY="62.0" mnemonicParsing="false" onAction="#ListReviews" text="ListReviews" />
       <Button fx:id="save" layoutX="127.0" layoutY="115.0" mnemonicParsing="false" onAction="#SaveReview" text="SaveReview" />
-      <TextArea fx:id="TextYourOpinion" layoutX="244.0" layoutY="40.0" prefHeight="200.0" prefWidth="275.0" />
       <Label layoutX="300.0" layoutY="14.0" prefHeight="25.0" prefWidth="133.0" text="Tell us your opinion">
          <font>
             <Font size="15.0" />
@@ -20,8 +18,9 @@
          <font>
             <Font size="14.0" />
          </font></Label>
-      <TextField fx:id="check" layoutX="335.0" layoutY="256.0" prefHeight="25.0" prefWidth="167.0" />
+      <TextField fx:id="check" layoutX="335.0" layoutY="256.0" prefHeight="20.0" prefWidth="167.0" />
       <Button layoutX="127.0" layoutY="161.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Log out" />
       <Button fx:id="checkUs" layoutX="282.0" layoutY="294.0" mnemonicParsing="false" onAction="#checkUser" text="checkUsername" />
+      <TextField fx:id="opinion" layoutX="255.0" layoutY="46.0" prefHeight="188.0" prefWidth="272.0" />
    </children>
 </AnchorPane>

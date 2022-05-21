@@ -74,11 +74,11 @@ public class MenuService {
                 foodRepository.remove(f);
                 foodRepository.insert(found);
             }
-            }
+        }
         if (ok==0)
             throw new WrongFoodException(name);
 
-     return found;
+        return found;
     }
 
     private static void checkFoodDoesNotExist(String name) throws  WrongFoodException{
