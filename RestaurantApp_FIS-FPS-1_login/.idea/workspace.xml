@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="21 mai- testFoodIsAddedToDatabase &amp; testFoodCanNotBeAddedTwice&#10;eroare la test in legatura cu inserarea Path-ului in baza de date">
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="testFoodIsAddedToDatabase test success&#10;testFoodCanNotBeAddedTwice test failed">
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/FillingFormTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/database-registration-example/Restaurant-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database-registration-example/Restaurant-database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/Food/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/Food/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/MenuServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/MenuServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +75,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice">
-    <configuration name="MenuServiceTest.testFoodCanNotBeAddedTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FillingFormTest.testTimeUpdate">
+    <configuration name="FillingFormTest.testIUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
@@ -85,14 +85,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="FoodTests" />
-      <option name="MAIN_CLASS_NAME" value="FoodTests.MenuServiceTest" />
-      <option name="METHOD_NAME" value="testFoodCanNotBeAddedTwice" />
+      <option name="MAIN_CLASS_NAME" value="FoodTests.FillingFormTest" />
+      <option name="METHOD_NAME" value="testIUpdate(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuServiceTest.testFoodIsAddedToDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FillingFormTest.testInsertFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
@@ -101,14 +101,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="FoodTests" />
-      <option name="MAIN_CLASS_NAME" value="FoodTests.MenuServiceTest" />
-      <option name="METHOD_NAME" value="testFoodIsAddedToDatabase" />
+      <option name="MAIN_CLASS_NAME" value="FoodTests.FillingFormTest" />
+      <option name="METHOD_NAME" value="testInsertFail(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest.testRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FillingFormTest.testTimeUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FoodTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="FoodTests" />
+      <option name="MAIN_CLASS_NAME" value="FoodTests.FillingFormTest" />
+      <option name="METHOD_NAME" value="testTimeUpdate(org.testfx.api.FxRobot)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInTesting.testLogInSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
@@ -117,8 +133,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testsLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsLogIn.RegistrationTest" />
-      <option name="METHOD_NAME" value="testRegistration(org.testfx.api.FxRobot)" />
+      <option name="MAIN_CLASS_NAME" value="testsLogIn.LogInTesting" />
+      <option name="METHOD_NAME" value="testLogInSuccess(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,37 +156,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.testUserIsAddedToDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsLogIn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsLogIn.UserServiceTest" />
-      <option name="METHOD_NAME" value="testUserIsAddedToDatabase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice" />
-      <item itemvalue="JUnit.MenuServiceTest.testFoodIsAddedToDatabase" />
+      <item itemvalue="JUnit.FillingFormTest.testIUpdate" />
+      <item itemvalue="JUnit.FillingFormTest.testInsertFail" />
+      <item itemvalue="JUnit.FillingFormTest.testTimeUpdate" />
       <item itemvalue="JUnit.UserServiceTest.testUserCanNotBeAddedTwice" />
-      <item itemvalue="JUnit.UserServiceTest.testUserIsAddedToDatabase" />
-      <item itemvalue="JUnit.RegistrationTest.testRegistration" />
+      <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
       <item itemvalue="Maven.Restaurant" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice" />
+        <item itemvalue="JUnit.FillingFormTest.testTimeUpdate" />
+        <item itemvalue="JUnit.FillingFormTest.testIUpdate" />
+        <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
         <item itemvalue="JUnit.UserServiceTest.testUserCanNotBeAddedTwice" />
-        <item itemvalue="JUnit.MenuServiceTest.testFoodIsAddedToDatabase" />
-        <item itemvalue="JUnit.UserServiceTest.testUserIsAddedToDatabase" />
-        <item itemvalue="JUnit.RegistrationTest.testRegistration" />
+        <item itemvalue="JUnit.FillingFormTest.testInsertFail" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653139777686</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="testFoodIsAddedToDatabase test success&#10;testFoodCanNotBeAddedTwice test failed">
+      <created>1653140069522</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1653140069522</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,7 +293,8 @@
     <MESSAGE value="User DataBase Tests work" />
     <MESSAGE value="testRegistration works with RobotFx. Un caz de succes, un caz de failure, un caz de succes" />
     <MESSAGE value="21 mai- testFoodIsAddedToDatabase &amp; testFoodCanNotBeAddedTwice&#10;eroare la test in legatura cu inserarea Path-ului in baza de date" />
-    <option name="LAST_COMMIT_MESSAGE" value="21 mai- testFoodIsAddedToDatabase &amp; testFoodCanNotBeAddedTwice&#10;eroare la test in legatura cu inserarea Path-ului in baza de date" />
+    <MESSAGE value="testFoodIsAddedToDatabase test success&#10;testFoodCanNotBeAddedTwice test failed" />
+    <option name="LAST_COMMIT_MESSAGE" value="testFoodIsAddedToDatabase test success&#10;testFoodCanNotBeAddedTwice test failed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -322,6 +330,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/FillingFormTest.java</url>
+          <line>63</line>
+          <properties class="FoodTests.FillingFormTest" method="testInsertSuccess">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/FillingFormTest.java</url>
+          <line>85</line>
+          <properties class="FoodTests.FillingFormTest" method="testInsertFail">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
