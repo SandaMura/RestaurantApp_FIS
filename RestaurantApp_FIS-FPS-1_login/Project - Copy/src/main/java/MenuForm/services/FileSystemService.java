@@ -1,5 +1,6 @@
 package MenuForm.services;
 
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -15,5 +16,15 @@ public class FileSystemService {
         return APPLICATION_HOME_PATH.resolve(Paths.get("", path));
 
 
+    }
+
+    public static Path getApplicationHomeFolder() {
+        return Paths.get(FOOD_FOLDER, APPLICATION_FOLDER);
+    }
+
+    public static void initDirectory() {
+        Path applicationHomePath = getApplicationHomeFolder();
+        if (!Files.exists(applicationHomePath))
+            applicationHomePath.toFile().mkdirs();
     }
 }
