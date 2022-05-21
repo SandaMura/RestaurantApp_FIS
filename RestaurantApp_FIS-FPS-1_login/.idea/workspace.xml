@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="Test start, stop, reset methods for the StopWatch">
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="Use FXRobot to test the Timer Interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Timer/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Timer/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/timer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/timer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/TimerTests/TimerForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/TimerTests/TimerForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Admin/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Admin/AdminView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/controllers/MenuFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/controllers/MenuFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/Admin_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/Admin_view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/FormInterface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/FormInterface.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/AdminTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,18 +77,18 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TimerForm.testCookTimer">
-    <configuration name="MenuServiceTest.testFoodCanNotBeAddedTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AdminTest.testButtons">
+    <configuration name="AdminTest.testButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FoodTests.*" />
+          <option name="PATTERN" value="UserViewsTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="FoodTests" />
-      <option name="MAIN_CLASS_NAME" value="FoodTests.MenuServiceTest" />
-      <option name="METHOD_NAME" value="testFoodCanNotBeAddedTwice" />
+      <option name="PACKAGE_NAME" value="UserViewsTests" />
+      <option name="MAIN_CLASS_NAME" value="UserViewsTests.AdminTest" />
+      <option name="METHOD_NAME" value="testButtons(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,7 +159,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice" />
+      <item itemvalue="JUnit.AdminTest.testButtons" />
       <item itemvalue="JUnit.StopWatchTest.testStartResetButtons" />
       <item itemvalue="JUnit.StopWatchTest.testStartStopButtons" />
       <item itemvalue="JUnit.TimerForm.testCookTimer" />
@@ -166,11 +168,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminTest.testButtons" />
         <item itemvalue="JUnit.TimerForm.testCookTimer" />
         <item itemvalue="JUnit.TimerForm.testCustomerTimer" />
         <item itemvalue="JUnit.StopWatchTest.testStartResetButtons" />
         <item itemvalue="JUnit.StopWatchTest.testStartStopButtons" />
-        <item itemvalue="JUnit.MenuServiceTest.testFoodCanNotBeAddedTwice" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653147923049</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Use FXRobot to test the Timer Interface">
+      <created>1653149749286</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1653149749286</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -318,7 +327,8 @@
     <MESSAGE value="FxRobot tests for Menu Form: testInsertSuccess &amp; testTimeUpdate" />
     <MESSAGE value="FxRobot tests for Menu Form: test Delete &amp; test Show" />
     <MESSAGE value="Test start, stop, reset methods for the StopWatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test start, stop, reset methods for the StopWatch" />
+    <MESSAGE value="Use FXRobot to test the Timer Interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use FXRobot to test the Timer Interface" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -332,6 +342,11 @@
           <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/TimerTests/TimerForm.java</url>
           <line>56</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/AdminTest.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java</url>
