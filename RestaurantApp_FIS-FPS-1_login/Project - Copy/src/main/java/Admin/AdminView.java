@@ -107,15 +107,15 @@ public class AdminView {
     }
 
     @FXML
-    private Button view;
+    private Button viewR;
 
 
 
     @FXML
-    void ViewReview(ActionEvent event){
+    void viewRev(ActionEvent event){
         Stage stage;
         Parent root;
-        stage = (Stage) view.getScene().getWindow();
+        stage = (Stage) viewR.getScene().getWindow();
         try {
             root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("DisplayReview.fxml"));
             stage.setScene(new Scene(root, 600, 450));
