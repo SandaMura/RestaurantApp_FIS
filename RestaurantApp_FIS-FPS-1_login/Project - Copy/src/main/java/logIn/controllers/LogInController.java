@@ -46,7 +46,7 @@ public class LogInController {
     @FXML
     private Button Test;
 
-    private void AlertBox(String message){
+    public static void AlertBox(String message){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Message Here...");
         alert.setHeaderText("Look, an Information Dialog");
@@ -164,7 +164,7 @@ public class LogInController {
 
 
 
-        AlertBox("The changeScene method happened");
+    //    AlertBox("The changeScene method happened");
     }
     /*
     public void test(ActionEvent actionEvent) {

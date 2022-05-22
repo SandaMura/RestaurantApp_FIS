@@ -12,7 +12,7 @@ public class Time implements ActionListener {
     JButton resetButton = new JButton("RESET");
     JLabel timeLabel = new JLabel();
     int elapsedTime = 0;
-    int seconds = 0;
+    public int seconds = 0;
     int minutes = 0;
     int hours = 0;
     boolean started = false;
@@ -67,15 +67,15 @@ public class Time implements ActionListener {
         frame.setVisible(true);
     }
 
-    void start() {
+    public void start() {
         timer.start();
     }
 
-    void stop() {
+    public void stop() {
         timer.stop();
     }
 
-    void reset() {
+    public void reset() {
         timer.stop();
         elapsedTime = 0;
         seconds = 0;

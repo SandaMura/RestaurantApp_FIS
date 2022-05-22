@@ -34,6 +34,7 @@ public class CookView {
     }
 
     @FXML
+    private Button timerButton;
     private Button stopwatch;
     @FXML
     private Button rev;
@@ -56,7 +57,7 @@ public class CookView {
 
         Stage stage;
         Parent root;
-        stage = (Stage) stopwatch.getScene().getWindow();
+        stage = (Stage) timerButton.getScene().getWindow();
         try {
             root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("timer.fxml")));
             stage.setScene(new Scene(root, 600, 450));

@@ -32,7 +32,7 @@ import static MenuForm.services.MenuService.foodRepository;
 import static logIn.services.DBUtils.AlertBox;
 
 
-public class MenuFormController{
+public class MenuFormController {
 
     @FXML
     private Button Button_attach;
@@ -59,7 +59,7 @@ public class MenuFormController{
     private ImageView Picture;
 
     @FXML
-    private Button Back;
+    private Button BackToAdmin;
     @FXML
     private Button show;
     @FXML
@@ -84,9 +84,8 @@ public class MenuFormController{
     private TableColumn<Food, Integer> time;
 
 
-
-
-    @FXML public void initialize(){
+    @FXML
+    public void initialize() {
         ShowButton.setOnAction(this::ShowData);
     }
 
@@ -104,7 +103,8 @@ public class MenuFormController{
             e.printStackTrace();
         }
     }
-    public void SubmitAction(ActionEvent event){
+
+    public void SubmitAction(ActionEvent event) {
 
         System.out.println("vreau sa inserez" + food_name.getText());
         try {
@@ -120,10 +120,11 @@ public class MenuFormController{
         try {
             MenuService.checkDelete(food_name.getText());
             AlertBox("Dish deleted from database successfully!");
-        }catch(WrongFoodException w){
+        } catch (WrongFoodException w) {
             System.out.println(w.getMessage());
         }
     }
+
     @FXML
     void goToLogin(ActionEvent event) {
         Stage stage;
@@ -137,16 +138,18 @@ public class MenuFormController{
             e.printStackTrace();
         }
     }
+
     public void UpdateTime(ActionEvent event) throws WrongFoodException {
 
         System.out.println("vreau sa modific timpul pentru " + food_name.getText());
         try {
             MenuService.UpdateTime(food_name.getText(), Integer.valueOf(prep_time.getText()));
             AlertBox("Time update successfully!");
-        }catch(WrongFoodException w){
+        } catch (WrongFoodException w) {
             System.out.println(w.getMessage());
         }
     }
+
     public void AttachAction(ActionEvent actionEvent) {
          /* stage = (Stage) ScrollingForm1.getScene().getWindow();
         System.out.println("You successfully logged out");
@@ -169,7 +172,7 @@ public class MenuFormController{
 
         Stage stage;
         Parent root;
-        stage = (Stage) Back.getScene().getWindow();
+        stage = (Stage) BackToAdmin.getScene().getWindow();
         try {
             root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("Admin_view.fxml")));
             stage.setScene(new Scene(root, 600, 450));
@@ -178,7 +181,8 @@ public class MenuFormController{
             e.printStackTrace();
         }
     }
-    public void initialize2(){
+
+    public void initialize2() {
         name.setCellValueFactory(new PropertyValueFactory<Food, String>("name"));
         picture.setCellValueFactory(new PropertyValueFactory<Food, String>("PicturePath"));
         ingredients.setCellValueFactory(new PropertyValueFactory<Food, String>("ingredients"));
@@ -187,15 +191,30 @@ public class MenuFormController{
 
         ObservableList<Food> products = FXCollections.observableArrayList();
         Cursor<Food> foodList = MenuService.getAllFood();
-
-        for(Food f : foodList){
+        for (Food f : foodList) {
             products.add(f);
         }
         table.setItems(products);
     }
-        public void ViewAdmin() {
-            initialize2();
+
+
+
+    public void ViewAdmin() {
+        initialize2();
+    }
+
+    public void backToAdmin(ActionEvent actionEvent) {
+        Stage stage;
+        Parent root;
+        stage = (Stage) BackToAdmin.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("Admin_view.fxml")));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-
+    }
 }
+

@@ -25,7 +25,10 @@ public class AdminView {
     @FXML
     private Button OpenFillForm;
     @FXML
-    private Button goReview;
+    private Button ShowReviews;
+
+    @FXML
+    private Button DisplayItems;
 
     @FXML
     private Button goToLogOut;
@@ -62,13 +65,40 @@ public class AdminView {
     Stage stage;
     Parent root;
 
-    @FXML
+   /* @FXML
     void OpenReviewForm(ActionEvent event) {
         Stage stage;
         Parent root;
         stage = (Stage) goReview.getScene().getWindow();
         try {
             root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("Review.fxml")));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }*/
+
+    public void goToDisplay(ActionEvent actionEvent) {
+
+        Stage stage;
+        Parent root;
+        stage = (Stage) DisplayItems.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("DisplayMenu.fxml")));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void goToReviews(ActionEvent actionEvent) {
+        Stage stage;
+        Parent root;
+        stage = (Stage) ShowReviews.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("ReviewN.fxml")));
             stage.setScene(new Scene(root, 600, 450));
             stage.show();
         } catch (IOException e) {

@@ -1,6 +1,7 @@
 package Customer;
 
 import App.RestaurantApplication;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,9 +20,12 @@ public class CustomerView {
     @FXML
     private Button goReview;
 
+    @FXML
+    private Button MakeOrder;
+
 
     @FXML
-    private Button goToTimerScene;
+    private Button timerButton;
 
 
 
@@ -30,7 +34,7 @@ public class CustomerView {
     {
         Stage stage;
         Parent root;
-        stage = (Stage) goToTimerScene.getScene().getWindow();
+        stage = (Stage) timerButton.getScene().getWindow();
         try {
             root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("timer.fxml")));
             stage.setScene(new Scene(root, 600, 450));
@@ -61,6 +65,20 @@ public class CustomerView {
         stage = (Stage) goReview.getScene().getWindow();
         try {
             root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("ReviewN.fxml")));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void DisplayMenu(ActionEvent actionEvent) {
+        Stage stage;
+        Parent root;
+
+        stage = (Stage) MakeOrder.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("DisplayMenu.fxml"));
             stage.setScene(new Scene(root, 600, 450));
             stage.show();
         } catch (IOException e) {
