@@ -14,12 +14,30 @@ import java.util.Objects;
 
 public class CookView {
 
-
+    @FXML
+    private Button view;
     @FXML
     private Button goToLogOut;
+    @FXML
+    public void ViewOrders(){
+        Stage stage;
+        Parent root;
+        stage = (Stage) view.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("OrderList.fxml")));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 
     @FXML
     private Button timerButton;
+    private Button stopwatch;
+    @FXML
+    private Button rev;
     public void goToLogOutScene(ActionEvent actionEvent) {
 
         Stage stage;
@@ -48,4 +66,17 @@ public class CookView {
             e.printStackTrace();
         }
     }
-}
+    public void reviewV(ActionEvent actionEvent) {
+        Stage stage;
+        Parent root;
+        stage = (Stage) rev.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("DisplayReview.fxml")));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    }

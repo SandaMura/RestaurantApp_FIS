@@ -59,12 +59,12 @@ public class CustomerView {
         }
     }
     @FXML
-    void OpenReviewForm(ActionEvent event) {
+    void OpenReviewForm() {
         Stage stage;
         Parent root;
         stage = (Stage) goReview.getScene().getWindow();
         try {
-            root = FXMLLoader.load(RestaurantApplication.class.getClassLoader().getResource("ReviewN.fxml"));
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("ReviewN.fxml")));
             stage.setScene(new Scene(root, 600, 450));
             stage.show();
         } catch (IOException e) {

@@ -1,4 +1,4 @@
-package Review;
+package Review.exception;
 
 import static logIn.services.DBUtils.AlertBox;
 

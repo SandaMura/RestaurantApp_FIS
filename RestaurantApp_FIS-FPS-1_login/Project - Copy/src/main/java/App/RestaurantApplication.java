@@ -2,6 +2,7 @@ package App;
 
 
 import MenuForm.services.MenuService;
+import Review.services.ReviewService;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -18,8 +19,10 @@ public class RestaurantApplication extends Application{
         System.out.println("DEBUG: Am initializat baza de date USERS");
         MenuService.initDatabase();
         System.out.println("DEBUG: Am initializat baza de date FOOD");
-        //FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("register.fxml"));
-        //FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("FormInterface.fxml"));
+       // FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("register.fxml"));
+       // FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("FormInterface.fxml"));
+        ReviewService.initDatabase();
+        System.out.println("DEBUG: Am initializat baza de date REVIEW");
 
         FXMLLoader fxmlLoader = new FXMLLoader(RestaurantApplication.class.getClassLoader().getResource("FormInterface.fxml"));
         System.out.println("DEBUG: Deschide fereastra de login!");
