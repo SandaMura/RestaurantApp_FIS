@@ -5,12 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="Test Buttons from COOK Menu with FXRobots">
+      <change afterPath="$PROJECT_DIR$/../.idea/RestaurantApp_FIS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_14_2022_9_04_PM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_14_2022_9_04_PM__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_15_2022_11_39_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_15_2022_11_39_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Cook/CookView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Cook/CookView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Customer/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Customer/CustomerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/logOut/logOutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/logOut/logOutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/Customer_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/Customer_view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/CustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/CustomerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/FillingFormTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/MenuServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/TimerTests/StopWatchTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/TimerTests/TimerForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/AdminTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/CookTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/UserViewsTests/CustomerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/firstTest/TestingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/RegistrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/UserServiceTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="FPS-65" />
+        <entry key="$PROJECT_DIR$/.." value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -49,18 +63,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sanda/OneDrive - Universitatea Politehnica Timisoara/AN 2 2021-2022/sem2/Labs/FIS/tema2/Project - Copy/RestaurantApp_FIS/RestaurantApp_FIS-FPS-1_login/Project - Copy&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Luyza/Desktop/final fis/RestaurantApp_FIS/RestaurantApp_FIS-FPS-1_login/Project - Copy",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sanda\OneDrive - Universitatea Politehnica Timisoara\AN 2 2021-2022\sem2\Labs\FIS\tema2\Project - Copy\RestaurantApp_FIS\RestaurantApp_FIS-FPS-1_login\Project - Copy\src\main\java" />
@@ -77,7 +91,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerTest.testButtons">
+  <component name="RunManager" selected="JUnit.AdminTest.testButtons">
     <configuration name="AdminTest.testButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
@@ -168,10 +182,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminTest.testButtons" />
         <item itemvalue="JUnit.CustomerTest.testButtons" />
         <item itemvalue="JUnit.CookTest.testButtons" />
         <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
-        <item itemvalue="JUnit.AdminTest.testButtons" />
         <item itemvalue="JUnit.TimerForm.testCookTimer" />
       </list>
     </recent_temporary>
@@ -319,7 +333,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
