@@ -44,9 +44,8 @@ public class Food {
         this.price=price;
     }
 
+
     public void setPicture(String picturePath) {
         this.picture=picturePath;
     }
-
-
 }

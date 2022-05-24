@@ -4,11 +4,16 @@ import MenuForm.Food.Food;
 import MenuForm.services.MenuService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.ListView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.dizitart.no2.objects.Cursor;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+
+import static logIn.services.DBUtils.AlertBox;
+
 
 public class DisplayMenuController {
 
@@ -29,11 +34,11 @@ public class DisplayMenuController {
 
     @FXML
     private TableColumn<Food, Integer> Time;
-    
+
 
     @FXML public void initialize(){
         Name.setCellValueFactory(new PropertyValueFactory<Food, String>("name"));
-        Picture.setCellValueFactory(new PropertyValueFactory<Food, String>("picture"));
+        Picture.setCellValueFactory(new PropertyValueFactory<Food, String>("PicturePath"));
         Ingredients.setCellValueFactory(new PropertyValueFactory<Food, String>("ingredients"));
         Time.setCellValueFactory(new PropertyValueFactory<Food, Integer>("time"));
         Price.setCellValueFactory(new PropertyValueFactory<Food, Double>("price"));
@@ -46,4 +51,20 @@ public class DisplayMenuController {
         }
         Table.setItems(products);
     }
+   public static ObservableList<String> Order=FXCollections.observableArrayList();
+
+    public void AddOrder(ActionEvent actionEvent) {
+        Food food=Table.getSelectionModel().getSelectedItem();
+         if(food!=null) {
+             Order.add(food.getName());
+         AlertBox("Dish \"" +food.getName() + "\" added to order");
+         }
+         else
+             AlertBox("Please select a dish");
+    }
+    public static ObservableList<String> getList3(){
+        return Order;
+    }
+
+
 }

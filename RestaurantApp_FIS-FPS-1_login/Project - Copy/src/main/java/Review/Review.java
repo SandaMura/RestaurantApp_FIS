@@ -3,14 +3,15 @@ import java.util.Date;
 import java.util.Objects;
 public class Review {
 
-        private String username;
+    public static Object services;
+    private String username;
         private String text;
         private Date date;
 
-        public Review(String username, String text, Date date) {
+        public Review(String username, String text) {
             this.username = username;
             this.text = text;
-            this.date = date;
+
         }
 
         public Review(){
@@ -24,11 +25,6 @@ public class Review {
         public String getText() {
             return text;
         }
-
-        public Date getDate() {
-            return date;
-        }
-
         public void setUsername(String username) {
             this.username = username;
         }
@@ -37,9 +33,7 @@ public class Review {
             this.text = text;
         }
 
-        public void setDate(Date date) {
-            this.date = date;
-        }
+
 
         }
 
