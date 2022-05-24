@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="24 may - Review tests">
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="Start tests for making orders">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testOrder/orderCookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testOrder/orderCookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testOrder/orderCustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testOrder/orderCustomerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="FPS-70" />
+        <entry key="$PROJECT_DIR$/.." value="FPS-86" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -72,7 +75,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AdminReviewTest.testViewNewReview">
+  <component name="RunManager" selected="JUnit.orderCookTest.testViewOrders">
     <configuration name="AdminReviewTest.testViewNewReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
@@ -89,65 +92,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerReviewTest.testWrirteNewReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FillingFormTest.testInsertSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ReviewTests.*" />
+          <option name="PATTERN" value="FoodTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ReviewTests" />
-      <option name="MAIN_CLASS_NAME" value="ReviewTests.CustomerReviewTest" />
-      <option name="METHOD_NAME" value="testWrirteNewReview(org.testfx.api.FxRobot)" />
+      <option name="PACKAGE_NAME" value="FoodTests" />
+      <option name="MAIN_CLASS_NAME" value="FoodTests.FillingFormTest" />
+      <option name="METHOD_NAME" value="testInsertSuccess(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogInTesting.testLogInSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="orderCookTest.testViewOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsLogIn.*" />
+          <option name="PATTERN" value="testOrder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testsLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsLogIn.LogInTesting" />
-      <option name="METHOD_NAME" value="testLogInSuccess(org.testfx.api.FxRobot)" />
+      <option name="PACKAGE_NAME" value="testOrder" />
+      <option name="MAIN_CLASS_NAME" value="testOrder.orderCookTest" />
+      <option name="METHOD_NAME" value="testViewOrders(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogInTesting.testLogInSuccessCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="orderCustomerTest.testViewMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsLogIn.*" />
+          <option name="PATTERN" value="testOrder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testsLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsLogIn.LogInTesting" />
-      <option name="METHOD_NAME" value="testLogInSuccessCustomer(org.testfx.api.FxRobot)" />
+      <option name="PACKAGE_NAME" value="testOrder" />
+      <option name="MAIN_CLASS_NAME" value="testOrder.orderCustomerTest" />
+      <option name="METHOD_NAME" value="testViewMenu(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReviewDatabaseTest.testFoodIsAddedToDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="orderCustomerTest.testViewOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ReviewTests.*" />
+          <option name="PATTERN" value="testOrder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ReviewTests" />
-      <option name="MAIN_CLASS_NAME" value="ReviewTests.ReviewDatabaseTest" />
-      <option name="METHOD_NAME" value="testFoodIsAddedToDatabase" />
+      <option name="PACKAGE_NAME" value="testOrder" />
+      <option name="MAIN_CLASS_NAME" value="testOrder.orderCustomerTest" />
+      <option name="METHOD_NAME" value="testViewOrders(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,19 +158,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.AdminReviewTest.testViewNewReview" />
-      <item itemvalue="JUnit.CustomerReviewTest.testWrirteNewReview" />
-      <item itemvalue="JUnit.LogInTesting.testLogInSuccessCustomer" />
-      <item itemvalue="JUnit.ReviewDatabaseTest.testFoodIsAddedToDatabase" />
-      <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
+      <item itemvalue="JUnit.FillingFormTest.testInsertSuccess" />
+      <item itemvalue="JUnit.orderCookTest.testViewOrders" />
+      <item itemvalue="JUnit.orderCustomerTest.testViewMenu" />
+      <item itemvalue="JUnit.orderCustomerTest.testViewOrders" />
       <item itemvalue="Maven.Restaurant" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.orderCookTest.testViewOrders" />
+        <item itemvalue="JUnit.orderCustomerTest.testViewOrders" />
+        <item itemvalue="JUnit.orderCustomerTest.testViewMenu" />
+        <item itemvalue="JUnit.FillingFormTest.testInsertSuccess" />
         <item itemvalue="JUnit.AdminReviewTest.testViewNewReview" />
-        <item itemvalue="JUnit.ReviewDatabaseTest.testFoodIsAddedToDatabase" />
-        <item itemvalue="JUnit.CustomerReviewTest.testWrirteNewReview" />
-        <item itemvalue="JUnit.LogInTesting.testLogInSuccessCustomer" />
-        <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653377965703</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Start tests for making orders">
+      <created>1653378297899</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1653378297899</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -355,7 +365,8 @@
     <MESSAGE value="Test Buttons from COOK Menu with FXRobots" />
     <MESSAGE value="24 may - Actualizare proiect, start tests for review" />
     <MESSAGE value="24 may - Review tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="24 may - Review tests" />
+    <MESSAGE value="Start tests for making orders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start tests for making orders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -401,15 +412,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/FillingFormTest.java</url>
-          <line>63</line>
-          <properties class="FoodTests.FillingFormTest" method="testInsertSuccess">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/FoodTests/FillingFormTest.java</url>
