@@ -15,8 +15,11 @@ import java.util.Objects;
 
 public class logOutController{
 
+
     @FXML
     private Button LogOut_button;
+
+
     @FXML
     private AnchorPane Scene_LogOut;
 
