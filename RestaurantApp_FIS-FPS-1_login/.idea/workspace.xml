@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="Start tests for making orders">
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="Interface tests for Orders (FxRobot)">
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testOrder/testListOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database/Food-database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testOrder/orderCookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testOrder/orderCookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testOrder/orderCustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testOrder/orderCustomerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653378297899</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Interface tests for Orders (FxRobot)">
+      <created>1653379170825</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1653379170825</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -366,7 +371,8 @@
     <MESSAGE value="24 may - Actualizare proiect, start tests for review" />
     <MESSAGE value="24 may - Review tests" />
     <MESSAGE value="Start tests for making orders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start tests for making orders" />
+    <MESSAGE value="Interface tests for Orders (FxRobot)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interface tests for Orders (FxRobot)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
