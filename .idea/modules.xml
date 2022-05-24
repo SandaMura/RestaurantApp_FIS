@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RestaurantApp_FIS-FPS-1_login/Project - Copy/Project.iml" filepath="$PROJECT_DIR$/RestaurantApp_FIS-FPS-1_login/Project - Copy/Project.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/RestaurantApp_FIS.iml" filepath="$PROJECT_DIR$/.idea/RestaurantApp_FIS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Project - Copy.iml" filepath="$PROJECT_DIR$/.idea/Project - Copy.iml" />
     </modules>
   </component>
 </project>
