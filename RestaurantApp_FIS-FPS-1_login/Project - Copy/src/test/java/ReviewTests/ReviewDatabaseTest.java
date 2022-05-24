@@ -2,11 +2,13 @@ package ReviewTests;
 
 import MenuForm.exceptions.foodAlreadyExistsException;
 import MenuForm.services.MenuService;
+import Review.controllers.DisplayReviewForAdminController;
 import Review.controllers.Review;
 import Review.services.*;
 import Review.exception.*;
 
 import Review.controllers.DisplayReviewController;
+import javafx.event.ActionEvent;
 import logIn.services.FileSystemService;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.*;
@@ -43,8 +45,8 @@ public class ReviewDatabaseTest {
     }
 
     @Test
-    @DisplayName("Food is successfully persisted to Database")
-    void testFoodIsAddedToDatabase() throws foodAlreadyExistsException {
+    @DisplayName("Review is successfully persisted to Database")
+    void testReviewIsAddedToDatabase() throws foodAlreadyExistsException {
 
       try{
           ReviewService.addReview(USER, TEXT );
@@ -61,6 +63,31 @@ public class ReviewDatabaseTest {
 
 
     }
+
+    @Test
+    void testReviewIsDeletedToDatabase() {
+
+        try{
+            ReviewService.addReview(USER, TEXT );
+        }catch(UsernameDoesNotExistsException e){
+            System.out.println(e);
+        }
+
+        ActionEvent event = null;
+
+
+            DisplayReviewForAdminController.deleteRv(event);
+
+      
+        Review review = ReviewService.getAllReview().firstOrDefault();
+        assertThat(review).isNull();
+       // assertThat(review.getUsername()).isEqualTo(USER);
+       // assertThat(review.getText()).isEqualTo(TEXT);
+
+
+
+    }
+
 
 
 }

@@ -35,7 +35,7 @@ public class testListOrder {
 
         MenuForm.controllers.DisplayMenuController.Order.add(neworder);
 
-        assertThat((MenuForm.controllers.DisplayMenuController.getList3()).isNotNull());
+        assertThat((MenuForm.controllers.DisplayMenuController.getList3()).isEmpty());
     }
 
 }
