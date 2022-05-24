@@ -93,16 +93,18 @@ public class AdminView {
         }
     }
 
-    public void goToReviews(ActionEvent actionEvent) {
+    public void viewRev(ActionEvent actionEvent) {
         Stage stage;
         Parent root;
         stage = (Stage) ShowReviews.getScene().getWindow();
         try {
-            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("ReviewN.fxml")));
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("DisplayReviewForAdmin.fxml")));
             stage.setScene(new Scene(root, 600, 450));
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+
 }

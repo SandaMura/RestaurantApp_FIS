@@ -4,26 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="Test Buttons from COOK Menu with FXRobots">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_14_2022_9_04_PM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_14_2022_9_04_PM__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_15_2022_11_39_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_15_2022_11_39_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="24 may - Actualizare proiect, start tests for review">
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/ReviewTests/AdminReviewTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/ReviewTests/CustomerReviewTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/ReviewTests/ReviewDatabaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project - Copy/database-registration-example/Restaurant-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database-registration-example/Restaurant-database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/Food/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/Food/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/controllers/DisplayMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/controllers/DisplayMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/controllers/MenuFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/controllers/MenuFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/exceptions/WrongFoodException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/exceptions/WrongFoodException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/exceptions/foodAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/exceptions/foodAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/services/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/MenuForm/services/MenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Review/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Review/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/Admin_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/Admin_view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/Cook_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/Cook_view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/DisplayMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/DisplayMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/LogOut_scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/LogOut_scene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/ReviewN.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/ReviewN.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/resources/com/example/project/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/resources/com/example/project/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Admin/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Admin/AdminView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Review/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Review/controllers/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Review/ReviewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Review/ReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Review/UsernameDoesNotExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,50 +82,34 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LogInTesting.testLogInSuccess">
-    <configuration name="AdminTest.testButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AdminReviewTest.testViewNewReview">
+    <configuration name="AdminReviewTest.testViewNewReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UserViewsTests.*" />
+          <option name="PATTERN" value="ReviewTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="UserViewsTests" />
-      <option name="MAIN_CLASS_NAME" value="UserViewsTests.AdminTest" />
-      <option name="METHOD_NAME" value="testButtons(org.testfx.api.FxRobot)" />
+      <option name="PACKAGE_NAME" value="ReviewTests" />
+      <option name="MAIN_CLASS_NAME" value="ReviewTests.AdminReviewTest" />
+      <option name="METHOD_NAME" value="testViewNewReview(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CookTest.testButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerReviewTest.testWrirteNewReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UserViewsTests.*" />
+          <option name="PATTERN" value="ReviewTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="UserViewsTests" />
-      <option name="MAIN_CLASS_NAME" value="UserViewsTests.CookTest" />
-      <option name="METHOD_NAME" value="testButtons(org.testfx.api.FxRobot)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerTest.testButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UserViewsTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UserViewsTests" />
-      <option name="MAIN_CLASS_NAME" value="UserViewsTests.CustomerTest" />
-      <option name="METHOD_NAME" value="testButtons(org.testfx.api.FxRobot)" />
+      <option name="PACKAGE_NAME" value="ReviewTests" />
+      <option name="MAIN_CLASS_NAME" value="ReviewTests.CustomerReviewTest" />
+      <option name="METHOD_NAME" value="testWrirteNewReview(org.testfx.api.FxRobot)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,37 +131,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TimerForm.testCookTimer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LogInTesting.testLogInSuccessCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TimerTests.*" />
+          <option name="PATTERN" value="testsLogIn.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TimerTests" />
-      <option name="MAIN_CLASS_NAME" value="TimerTests.TimerForm" />
-      <option name="METHOD_NAME" value="testCookTimer(org.testfx.api.FxRobot)" />
+      <option name="PACKAGE_NAME" value="testsLogIn" />
+      <option name="MAIN_CLASS_NAME" value="testsLogIn.LogInTesting" />
+      <option name="METHOD_NAME" value="testLogInSuccessCustomer(org.testfx.api.FxRobot)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewDatabaseTest.testFoodIsAddedToDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ReviewTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ReviewTests" />
+      <option name="MAIN_CLASS_NAME" value="ReviewTests.ReviewDatabaseTest" />
+      <option name="METHOD_NAME" value="testFoodIsAddedToDatabase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AdminTest.testButtons" />
-      <item itemvalue="JUnit.CookTest.testButtons" />
-      <item itemvalue="JUnit.CustomerTest.testButtons" />
-      <item itemvalue="JUnit.TimerForm.testCookTimer" />
+      <item itemvalue="JUnit.AdminReviewTest.testViewNewReview" />
+      <item itemvalue="JUnit.CustomerReviewTest.testWrirteNewReview" />
+      <item itemvalue="JUnit.LogInTesting.testLogInSuccessCustomer" />
+      <item itemvalue="JUnit.ReviewDatabaseTest.testFoodIsAddedToDatabase" />
       <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
       <item itemvalue="Maven.Restaurant" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminReviewTest.testViewNewReview" />
+        <item itemvalue="JUnit.ReviewDatabaseTest.testFoodIsAddedToDatabase" />
+        <item itemvalue="JUnit.CustomerReviewTest.testWrirteNewReview" />
+        <item itemvalue="JUnit.LogInTesting.testLogInSuccessCustomer" />
         <item itemvalue="JUnit.LogInTesting.testLogInSuccess" />
-        <item itemvalue="JUnit.AdminTest.testButtons" />
-        <item itemvalue="JUnit.CustomerTest.testButtons" />
-        <item itemvalue="JUnit.CookTest.testButtons" />
-        <item itemvalue="JUnit.TimerForm.testCookTimer" />
       </list>
     </recent_temporary>
   </component>
@@ -324,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653162008978</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="24 may - Actualizare proiect, start tests for review">
+      <created>1653372269531</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1653372269531</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,7 +356,8 @@
     <MESSAGE value="Use FXRobot to test the Timer Interface" />
     <MESSAGE value="Test Buttons from Admin Menu with FXRobots" />
     <MESSAGE value="Test Buttons from COOK Menu with FXRobots" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Buttons from COOK Menu with FXRobots" />
+    <MESSAGE value="24 may - Actualizare proiect, start tests for review" />
+    <option name="LAST_COMMIT_MESSAGE" value="24 may - Actualizare proiect, start tests for review" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -379,7 +379,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java</url>
-          <line>122</line>
+          <line>160</line>
           <properties class="testsLogIn.LogInTesting" method="testLogInExit">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -448,6 +448,33 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java</url>
+          <line>122</line>
+          <properties class="testsLogIn.LogInTesting" method="testLogInSuccess">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/ReviewTests/ReviewDatabaseTest.java</url>
+          <line>46</line>
+          <properties class="ReviewTests.ReviewDatabaseTest" method="testFoodIsAddedToDatabase">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Project - Copy/src/test/java/ReviewTests/AdminReviewTest.java</url>
+          <line>51</line>
+          <properties class="ReviewTests.AdminReviewTest" method="testViewNewReview">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

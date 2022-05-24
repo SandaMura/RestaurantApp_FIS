@@ -84,7 +84,7 @@ public class LogInTesting {
 
 
     @Test
-    void testLogInSuccess(FxRobot robot) {
+    void testLogInSuccessAdmin(FxRobot robot) {
 
         //robot.clickOn("#registerButton");
 
@@ -113,6 +113,44 @@ public class LogInTesting {
         robot.write("CUI111"); ///CUI gresit
 
         robot.clickOn("#loginButton");
+
+        //assertThat(LogInController.AlertBox());
+
+
+    }
+
+    @Test
+    void testLogInSuccessCustomer(FxRobot robot) {
+
+        //robot.clickOn("#registerButton");
+
+        robot.clickOn("#registerButton");
+
+        robot.clickOn("#usernameField");
+        robot.write(USERNAME+2);
+        robot.clickOn("#passwordField");
+        robot.write(PASSWORD);
+        robot.clickOn("#role");
+        robot.clickOn("Customer");
+
+        robot.clickOn("#RegButton");
+
+        robot.clickOn("#backToLogin");
+
+        robot.clickOn("#usernameField");
+        robot.write(USERNAME+2);
+        robot.clickOn("#passwordField");
+        robot.write(PASSWORD);
+        //  type(KeyCode.DOWN);
+        //type(KeyCode.ENTER);
+        robot.clickOn("#customerCheckRB");
+
+       // robot.clickOn("#CUIfield");
+       // robot.write("CUI111"); ///CUI gresit
+
+        robot.clickOn("#loginButton");
+
+        robot.clickOn("OK");
 
         //assertThat(LogInController.AlertBox());
 
