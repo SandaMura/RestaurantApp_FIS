@@ -3,11 +3,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="759.0" style="-fx-background-color: #D58490;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuForm.controllers.DisplayMenuController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="624.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuForm.controllers.DisplayMenuController">
    <children>
-      <TableView fx:id="Table" layoutX="-3.0" layoutY="7.0" prefHeight="335.0" prefWidth="766.0" style="-fx-background-color: #D58490;">
+      <TableView fx:id="Table" layoutX="-3.0" layoutY="7.0" prefHeight="323.0" prefWidth="624.0" style="-fx-background-color: white;">
         <columns>
           <TableColumn fx:id="Name" prefWidth="111.33331298828125" text="Name" />
           <TableColumn fx:id="Ingredients" prefWidth="98.00003051757812" text="Ingredients" />
@@ -16,6 +18,11 @@
             <TableColumn fx:id="Picture" prefWidth="159.3333740234375" text="Picture" />
         </columns>
       </TableView>
-      <Button fx:id="order" layoutX="574.0" layoutY="361.0" mnemonicParsing="false" onAction="#AddOrder" text="Add  order" />
+      <ImageView fitHeight="62.0" fitWidth="135.0" layoutX="500.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@3157846-200.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="order" layoutX="497.0" layoutY="334.0" mnemonicParsing="false" onAction="#AddOrder" prefHeight="51.0" prefWidth="62.0" style="-fx-background-color: transparent;" />
    </children>
 </AnchorPane>
