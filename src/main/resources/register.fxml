@@ -6,50 +6,87 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane alignment="center" hgap="10" prefHeight="400" prefWidth="600" style="-fx-background-color: D58480;" vgap="10" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logIn.controllers.RegistrationController">
 
-    <padding>
-        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
-    </padding>
-    <Text id="title-text" text="FIS - Restaurant Manager" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
-
-    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-
-    <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-
-    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-
-    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-
-    <Label text="Role:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
-
-    <ChoiceBox fx:id="role" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+<Pane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logIn.controllers.RegistrationController">
+   <children>
+      <GridPane alignment="center" hgap="10" prefHeight="521.0" prefWidth="621.0" style="-fx-background-color: D58480;" vgap="10">
+      
+          <padding>
+              <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+          </padding>
+         <ImageView fitHeight="51.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="19">
+            <image>
+               <Image url="@Untitled9.png" />
+            </image>
+         </ImageView>
+      
+          <TextField fx:id="usernameField" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      
+          <PasswordField fx:id="passwordField" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      
+          <Label prefHeight="20.0" prefWidth="39.0" text="Role:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+      
+          <ChoiceBox fx:id="role" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
     </ChoiceBox>
-
-    <Text fx:id="registrationMessage" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-    <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="5">
-        <Button fx:id="RegButton" onAction="#handleRegisterAction" text="Register" />
-    </HBox>
-   <Button fx:id="backToLogin" mnemonicParsing="false" onAction="#backToLogIn" text="Back to Log in" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-   <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
-</GridPane>
+      
+          <Text fx:id="registrationMessage" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+          <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+         <Button fx:id="backToLogin" mnemonicParsing="false" onAction="#backToLogIn" style="-fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="19" />
+         <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <image>
+               <Image url="@person-icons-android-username-icon-ios-11553402461wnwwgdi6wz.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="34.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <image>
+               <Image url="@download.png" />
+            </image>
+         </ImageView>
+           <Button fx:id="RegButton" onAction="#handleRegisterAction" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: white;" text="Confirm register" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+         <ImageView fitHeight="44.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="19" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</Pane>
