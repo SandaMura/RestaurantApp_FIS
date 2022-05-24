@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FAF0C5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cook.CookView">
+   <children>
+      <Button fx:id="view" layoutX="261.0" layoutY="71.0" mnemonicParsing="false" onAction="#ViewOrders" text="View Orders" />
+      <Button fx:id="goToLogOut" layoutX="255.0" layoutY="244.0" mnemonicParsing="false" onAction="#goToLogOutScene" text="Order finished" />
+      <Button fx:id="rev" layoutX="231.0" layoutY="188.0" mnemonicParsing="false" onAction="#reviewV" text="View reviews" />
+      <Button fx:id="stopwatch" layoutX="217.0" layoutY="125.0" mnemonicParsing="false" onAction="#goToTimerScene" text="Use the stopwatch for orders" />
+   </children>
+</AnchorPane>
