@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="24 may - Actualizare proiect, start tests for review">
-      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/ReviewTests/AdminReviewTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/ReviewTests/CustomerReviewTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/ReviewTests/ReviewDatabaseTest.java" afterDir="false" />
+    <list default="true" id="b8cb0dc3-de28-431c-8e7a-5c619215f749" name="Changes" comment="24 may - Review tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/database-registration-example/Restaurant-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/database-registration-example/Restaurant-database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Admin/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Admin/AdminView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Review/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/main/java/Review/controllers/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Review/ReviewController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Review/ReviewService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/main/java/Review/UsernameDoesNotExistsException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project - Copy/src/test/java/testsLogIn/LogInTesting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653372269531</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="24 may - Review tests">
+      <created>1653377965703</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1653377965703</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,7 +354,8 @@
     <MESSAGE value="Test Buttons from Admin Menu with FXRobots" />
     <MESSAGE value="Test Buttons from COOK Menu with FXRobots" />
     <MESSAGE value="24 may - Actualizare proiect, start tests for review" />
-    <option name="LAST_COMMIT_MESSAGE" value="24 may - Actualizare proiect, start tests for review" />
+    <MESSAGE value="24 may - Review tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="24 may - Review tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
