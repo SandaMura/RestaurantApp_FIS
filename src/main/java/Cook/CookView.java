@@ -17,9 +17,14 @@ public class CookView {
 
     @FXML
     private Button goToLogOut;
+    @FXML
+    private Button view;
+    @FXML
+    private Button rev;
 
     @FXML
     private Button timerButton;
+    @FXML
     public void goToLogOutScene(ActionEvent actionEvent) {
 
         Stage stage;
@@ -48,4 +53,31 @@ public class CookView {
             e.printStackTrace();
         }
     }
+    public void reviewV(ActionEvent actionEvent) {
+
+        Stage stage;
+        Parent root;
+        stage = (Stage) rev.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("DisplayReviewForAdmin.fxml")));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+        public void ViewOrders(ActionEvent actionEvent) {
+
+            Stage stage;
+            Parent root;
+            stage = (Stage)  view.getScene().getWindow();
+            try {
+                root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("OrdeList.fxml")));
+                stage.setScene(new Scene(root, 600, 450));
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+    }
+
 }
