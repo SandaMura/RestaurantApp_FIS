@@ -141,4 +141,18 @@ public class logOutController{
         }
 
     }
+
+    public void logout(ActionEvent actionEvent) {
+        Stage stage;
+        Parent root;
+        stage = (Stage) LogOut_button.getScene().getWindow();
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(RestaurantApplication.class.getClassLoader().getResource("LogInInterface.fxml")));
+            stage.setScene(new Scene(root, 600, 450));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 }

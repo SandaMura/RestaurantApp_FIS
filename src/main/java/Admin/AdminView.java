@@ -105,4 +105,7 @@ public class AdminView {
             e.printStackTrace();
         }
     }
+
+    public void viewRev(ActionEvent actionEvent) {
+    }
 }

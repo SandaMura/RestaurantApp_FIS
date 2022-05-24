@@ -20,11 +20,11 @@
     <padding>
         <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
     </padding>
-   <ImageView fitHeight="51.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="19">
+   <ImageView fitHeight="29.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="8">
       <image>
-         <Image url="@../../../../../poze%20fis/RestaurantApp_FIS/src/main/resources/Untitled9.png" />
-      </image>
-   </ImageView>
+         <Image url="@Untitled9.png" />
+      </image></ImageView>
+   <ImageView fitHeight="51.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
 
     <TextField fx:id="usernameField" GridPane.columnIndex="3" GridPane.rowIndex="1" />
 
@@ -38,26 +38,20 @@
     <ChoiceBox fx:id="role" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
     </ChoiceBox>
 
-    <Text fx:id="registrationMessage" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+    <Text fx:id="registrationMessage" GridPane.columnIndex="3" GridPane.rowIndex="17" />
     <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-   <Button fx:id="backToLogin" mnemonicParsing="false" onAction="#backToLogIn" style="-fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="19" />
+   <Button fx:id="backToLogin" mnemonicParsing="false" onAction="#backToLogIn" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
    <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
       <image>
-         <Image url="@../../../../../poze%20fis/RestaurantApp_FIS/src/main/resources/person-icons-android-username-icon-ios-11553402461wnwwgdi6wz.png" />
+         <Image url="@person-icons-android-username-icon-ios-11553402461wnwwgdi6wz.png" />
       </image>
    </ImageView>
    <ImageView fitHeight="34.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
       <image>
-         <Image url="@../../../../../poze%20fis/RestaurantApp_FIS/src/main/resources/download.png" />
+         <Image url="@download.png" />
       </image>
    </ImageView>
      <Button fx:id="RegButton" onAction="#handleRegisterAction" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: white;" text="Confirm register" GridPane.columnIndex="4" GridPane.rowIndex="8" />
-   <ImageView fitHeight="44.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="19" />
-   <ImageView fitHeight="212.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="19">
-      <image>
-         <Image url="@../../../../../poze%20fis/RestaurantApp_FIS/src/main/resources/restaurant-icon-transparent-0.jpg" />
-      </image>
-   </ImageView>
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
@@ -66,6 +60,7 @@
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
+      <RowConstraints />
       <RowConstraints />
       <RowConstraints />
       <RowConstraints />
