@@ -8,8 +8,10 @@ import javafx.scene.control.ListView;
 import static logIn.services.DBUtils.AlertBox;
 
 public class DisplayReviewForAdminController {
+   
     @FXML
-    public ListView<String> listRv=new ListView<>();
+    public ListView<String> listRv = new ListView<>();
+
     @FXML
     public void deleteRv(ActionEvent actionEvent) {
         DisplayReviewController.deleteR();
@@ -17,16 +19,17 @@ public class DisplayReviewForAdminController {
 
     @FXML
     public void showRv(ActionEvent actionEvent) {
-            if(!DisplayReviewController.getNewList().isEmpty()){
-                listRv.setItems(DisplayReviewController.getNewList());
-            }
-            else{
-                AlertBox("NIMIC");
-            }
-
-
+        if (!DisplayReviewController.getNewList().isEmpty()) {
+            listRv.setItems(DisplayReviewController.getNewList());
+        } else {
+            AlertBox("NIMIC");
         }
+
+
     }
+
+
+}
 
 
 

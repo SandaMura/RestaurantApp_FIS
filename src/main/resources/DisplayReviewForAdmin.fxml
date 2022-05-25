@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Scene?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Review.controllers.DisplayReviewForAdminController">
-   <children>
-      <Button fx:id="deleteRv" layoutX="505.0" layoutY="288.0" mnemonicParsing="false" onAction="#deleteRv" text="Delete review" />
-      <Button fx:id="showrev" layoutX="512.0" layoutY="242.0" mnemonicParsing="false" onAction="#showRv" text="Show review" />
-      <ListView fx:id="Listrev" layoutX="58.0" layoutY="42.0" prefHeight="303.0" prefWidth="372.0" />
-   </children>
-</AnchorPane>
+
+<Scene xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Review.controllers.DisplayReviewForAdminController">
+   <root>
+      <AnchorPane prefHeight="392.0" prefWidth="572.0">
+         <children>
+            <Button fx:id="deleteRv" layoutX="505.0" layoutY="288.0" mnemonicParsing="false" onAction="#deleteRv" text="Delete review" />
+            <Button fx:id="showrev" layoutX="507.0" layoutY="242.0" mnemonicParsing="false" onAction="#showRv" prefHeight="25.0" prefWidth="88.0" text="Show review list" />
+            <ListView fx:id="Listrev" layoutX="61.0" layoutY="48.0" prefHeight="303.0" prefWidth="372.0" />
+            <Button fx:id="backAdmin" layoutX="469.0" layoutY="332.0" mnemonicParsing="false" onAction="#backToAdmin" text="Back to admin menu" />
+         </children>
+      </AnchorPane>
+   </root>
+</Scene>
