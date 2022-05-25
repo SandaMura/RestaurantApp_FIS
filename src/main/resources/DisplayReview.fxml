@@ -2,16 +2,42 @@
 
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Review.controllers.DisplayReviewController">
    <children>
-      <TableView fx:id="table2" layoutX="14.0" layoutY="23.0" prefHeight="353.0" prefWidth="549.0">
+      <TableView fx:id="table2" layoutX="26.0" layoutY="23.0" prefHeight="284.0" prefWidth="537.0">
         <columns>
           <TableColumn fx:id="Name" prefWidth="273.3333435058594" text="Name" />
           <TableColumn fx:id="Review" prefWidth="275.33331298828125" text="Review" />
         </columns>
       </TableView>
+      <ImageView fitHeight="65.0" fitWidth="77.0" layoutX="14.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images%20(5).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="77.0" layoutX="122.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(4).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="77.0" layoutX="243.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(5).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="77.0" layoutX="366.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cute-love-sign-total-goldfish.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="77.0" layoutX="486.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(6).png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
