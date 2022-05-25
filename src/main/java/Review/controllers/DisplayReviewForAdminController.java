@@ -48,7 +48,7 @@ public class DisplayReviewForAdminController {
                 stage.show();
             } catch (IOException e) {
                 e.printStackTrace();
-            
+
         }
     }
 }

@@ -3,24 +3,37 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D58490;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Review.controllers.ReviewController">
    <children>
-      <Button fx:id="list" layoutX="127.0" layoutY="62.0" mnemonicParsing="false" onAction="#ListReviews" text="ListReviews" />
-      <Button fx:id="save" layoutX="127.0" layoutY="115.0" mnemonicParsing="false" onAction="#SaveReview" text="SaveReview" />
-      <Label layoutX="300.0" layoutY="14.0" prefHeight="25.0" prefWidth="133.0" text="Tell us your opinion">
+      <Button fx:id="list" layoutX="14.0" layoutY="74.0" mnemonicParsing="false" onAction="#ListReviews" prefHeight="44.0" prefWidth="97.0" text="Display reviews" />
+      <Label layoutX="422.0" layoutY="14.0" prefHeight="25.0" prefWidth="133.0" text="Tell us your opinion">
          <font>
             <Font size="15.0" />
          </font></Label>
-      <Label layoutX="245.0" layoutY="259.0" text="Username">
+      <Button layoutX="14.0" layoutY="145.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="97.0" text="Log out" />
+      <Button fx:id="checkUs" layoutX="437.0" layoutY="51.0" mnemonicParsing="false" onAction="#checkUser" prefHeight="20.0" prefWidth="23.0" style="-fx-background-color: transparent;" />
+      <ImageView fitHeight="316.0" fitWidth="341.0" layoutX="159.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download (7).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="opinion" layoutX="231.0" layoutY="108.0" prefHeight="73.0" prefWidth="108.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="save" layoutX="376.0" layoutY="318.0" mnemonicParsing="false" onAction="#SaveReview" text="SaveReview" />
+      <TextField fx:id="check" layoutX="255.0" layoutY="51.0" prefHeight="20.0" prefWidth="167.0" style="-fx-background-color: #D58490;" />
+      <Label layoutX="181.0" layoutY="54.0" text="Username">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <TextField fx:id="check" layoutX="335.0" layoutY="256.0" prefHeight="20.0" prefWidth="167.0" />
-      <Button layoutX="127.0" layoutY="161.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Log out" />
-      <Button fx:id="checkUs" layoutX="282.0" layoutY="294.0" mnemonicParsing="false" onAction="#checkUser" text="checkUsername" />
-      <TextField fx:id="opinion" layoutX="255.0" layoutY="46.0" prefHeight="188.0" prefWidth="272.0" />
+      <ImageView fitHeight="25.0" fitWidth="36.0" layoutX="432.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tutorial-preview-large.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backCustomer" layoutX="14.0" layoutY="215.0" mnemonicParsing="false" onAction="#backtoCustomer" prefHeight="44.0" prefWidth="141.0" text="Back to customer view" />
    </children>
 </AnchorPane>
