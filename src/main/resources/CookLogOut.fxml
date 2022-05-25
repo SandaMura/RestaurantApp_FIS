@@ -2,14 +2,33 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FAF0C5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logOut.logOutController">
    <children>
-      <Button fx:id="CookLogOut" layoutX="183.0" layoutY="235.0" mnemonicParsing="false" onAction="#logout2" text="yes, log out" />
-      <Button fx:id="backToCookMain" layoutX="310.0" layoutY="235.0" mnemonicParsing="false" onAction="#backToCookMain" text="no, continue shift" />
       <Label layoutX="272.0" layoutY="136.0" />
-      <Label layoutX="222.0" layoutY="165.0" text="Is this the end of your shift?" />
-      <Label layoutX="75.0" layoutY="106.0" text="Hello, cook!" />
+      <Label layoutX="117.0" layoutY="73.0" prefHeight="79.0" prefWidth="365.0" style="-fx-background-color: transparent;" text="Is this the end of your shift?">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Label>
+      <Label layoutX="42.0" layoutY="18.0" prefHeight="68.0" prefWidth="201.0" text="Hello, cook!">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="115.0" fitWidth="127.0" layoutX="56.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../New%20folder%20(3)/RestaurantApp_FIS/src/main/resources/log-out-icon-exit-concept-symbol-design-stock-vector-illustration-can-be-used-for-web-700-149649768.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="115.0" layoutX="388.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../New%20folder%20(3)/RestaurantApp_FIS/src/main/resources/images%20(4).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="CookLogOut" layoutX="56.0" layoutY="164.0" mnemonicParsing="false" onAction="#logout2" prefHeight="115.0" prefWidth="115.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="backToCookMain" layoutX="388.0" layoutY="164.0" mnemonicParsing="false" onAction="#backToCookMain" prefHeight="115.0" prefWidth="115.0" style="-fx-background-color: transparent;" />
    </children>
 </AnchorPane>

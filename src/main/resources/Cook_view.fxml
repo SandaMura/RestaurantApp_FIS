@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FAF0C5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cook.CookView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FAF0C5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cook.CookView">
    <children>
-      <Button fx:id="view" layoutX="261.0" layoutY="71.0" mnemonicParsing="false" onAction="#ViewOrders" text="View Orders" />
-      <Button fx:id="goToLogOut" layoutX="255.0" layoutY="244.0" mnemonicParsing="false" onAction="#goToLogOutScene" text="Order finished" />
-      <Button fx:id="rev" layoutX="231.0" layoutY="188.0" mnemonicParsing="false" onAction="#reviewV" text="View reviews" />
-      <Button fx:id="stopwatch" layoutX="217.0" layoutY="125.0" mnemonicParsing="false" onAction="#goToTimerScene" text="Use the stopwatch for orders" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../New%20folder%20(3)/RestaurantApp_FIS/src/main/resources/images%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="51.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Untitled746.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="368.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="368.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../New%20folder%20(3)/RestaurantApp_FIS/src/main/resources/8978987.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="122.0" fitWidth="153.0" layoutX="224.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../New%20folder%20(3)/RestaurantApp_FIS/src/main/resources/cook-icon-1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="rev" layoutX="54.0" layoutY="205.0" mnemonicParsing="false" onAction="#reviewV" prefHeight="134.0" prefWidth="143.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="goToLogOut" layoutX="371.0" layoutY="195.0" mnemonicParsing="false" onAction="#goToLogOutScene" prefHeight="134.0" prefWidth="143.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="view" layoutX="58.0" layoutY="38.0" mnemonicParsing="false" onAction="#ViewOrders" prefHeight="140.0" prefWidth="143.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="stopwatch" layoutX="368.0" layoutY="34.0" mnemonicParsing="false" onAction="#goToTimerScene" prefHeight="140.0" prefWidth="143.0" style="-fx-background-color: transparent;" />
    </children>
 </AnchorPane>
